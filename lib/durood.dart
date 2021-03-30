@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-
-// Colors that we use in our app
-const kPrimaryColor = Color(0xFF0C9869);
-//const kPrimaryColor = Colors.blue;
-const kTextColor = Color(0xFF3C4046);
-const kBackgroundColor = Color(0xFFF9F8FD);
-
-const double kDefaultPadding = 20.0;
+import 'components/card_ui.dart';
+import 'constants.dart';
 
 var _duroodAll =<String, String>{
   'Durood e Shafa':'اَللّٰھُمَّ صَلِّ وَ سَلِّمْ وَ بَارِکْ عَلٰی حَبِیْبِکَ شَفِیْعِ الْمُذْنِبِیْنَ وَ عَلٰٓی اٰلِہٖ وَ اَصْحَابِہٖ اَجْمَعِیْنَ',
@@ -41,5 +35,31 @@ var _duroodAll =<String, String>{
   'Durood e Razvia':'صَلَّی اللہُ عَلَی النَّبِیِّ الاُمِّیِّ وَ اٰلِہٖ صَلَّی اللہُ عَلَیْہِ وَ سَلَّمَ صَلٰوۃً وَّ سَلاَمًا عَلَیْکَ یَا رَسُوْلَ اللہِ۔'
 
 };
+
+
+
+class Durood extends StatelessWidget {
+
+
+  @override
+  Widget build(BuildContext context) {
+    // It will provie us total height  and width of our screen
+    Size size = MediaQuery.of(context).size;
+
+    return SingleChildScrollView(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+
+        children: <Widget>[
+            SizedBox(width: size.width,height: 24,),
+
+          for(var key in _duroodAll.keys)
+           CardUI(title: key, content: _duroodAll[key])
+        ],
+      ),
+    );
+  }
+}
+
 
 
