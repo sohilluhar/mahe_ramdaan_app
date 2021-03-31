@@ -40,7 +40,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: kPrimaryColor_123,
       ),
-      home: ConvexAppExample(title:"Home Page"),
+      home: HomePage(title:"Home Page"),
+
     );
   }
 }

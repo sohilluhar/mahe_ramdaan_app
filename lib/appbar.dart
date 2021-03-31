@@ -1,9 +1,9 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:mahe_ramdaan_app/components/recomend_plants.dart';
-
-
+import '../NewPage.dart';
 import 'components/body.dart';
+import 'components/mydrawer.dart';
 import 'constants.dart';
 import 'durood.dart';
 import 'home.dart';
@@ -18,26 +18,52 @@ const _kPages = <String, IconData>{
   'Other2': Icons.house,
 };
 
-class ConvexAppExample extends StatefulWidget {
+
+class HomePage extends StatefulWidget {
   var title;
-
-
-  ConvexAppExample({Key key, this.title}) : super(key: key);
-
-
+  HomePage({Key key, this.title}) : super(key: key);
 //  static String get s => null;
-
   @override
-  _ConvexAppExampleState createState() => _ConvexAppExampleState();
+  _HomePageState createState() => _HomePageState();
 }
 
 
 
-class _ConvexAppExampleState extends State<ConvexAppExample> {
+class _HomePageState extends State<HomePage> {
   TabStyle _tabStyle = TabStyle.react;
 
   @override
   Widget build(BuildContext context) {
+
+    const drawerHeader = UserAccountsDrawerHeader(
+      accountName: Text('User Name'),
+      accountEmail: Text('user.name@email.com'),
+      currentAccountPicture: CircleAvatar(
+        backgroundColor: Colors.white,
+        child: FlutterLogo(size: 42.0),
+      ),
+
+    );
+    final drawerItems = ListView(
+      children: <Widget>[
+        drawerHeader,
+        ListTile(
+          tileColor: Colors.white,
+          title: const Text('To page 1'),
+          onTap: () => Navigator.of(context).push(NewPage(1)),
+        ),
+        ListTile(
+          title: const Text('To page 2'),
+      onTap: () => Navigator.of(context).push(NewPage(2)),
+        ),
+        ListTile(
+          title: const Text('other drawer item'),
+          onTap: () {},
+        ),
+      ],
+    );
+
+
     return DefaultTabController(
       length: 5,
       initialIndex: 0,
@@ -48,7 +74,7 @@ class _ConvexAppExampleState extends State<ConvexAppExample> {
             title: Text(widget.title),
 
           ),
-
+          drawer: SideDrawer(),
           body: Column(
           children: [
 //            _buildStyleSelector(),
@@ -69,9 +95,6 @@ class _ConvexAppExampleState extends State<ConvexAppExample> {
         bottomNavigationBar:
 
         ConvexAppBar.badge(
-          // Optional badge argument: keys are tab indices, values can be
-          // String, IconData, Color or Widget.
-          /*badge=*/
 
           const <int, dynamic>{},
           style: _tabStyle,
@@ -84,6 +107,7 @@ class _ConvexAppExampleState extends State<ConvexAppExample> {
           onTap: (int i) => print('click index=$i'),
 
         ),
+
       ),
     );
   }
