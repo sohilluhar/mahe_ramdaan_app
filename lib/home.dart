@@ -23,13 +23,13 @@ class Home extends StatelessWidget {
 
     var c_time=now.hour;
     var saheritime=4.20;
-    var iftartime=17.0;
+    var iftartime=7.0;
     var now_dua_key;
     print(c_day);
 
-    if(c_time<saheritime+1.5 && c_time>saheritime-1.5)
+    if(c_time<saheritime+1 && c_time>saheritime-1)
       now_dua_key=dua_key[0];
-    else if(c_time<iftartime+1.5 && c_time>iftartime-1.5)
+    else if(c_time<iftartime+1 && c_time>iftartime-1)
       now_dua_key=dua_key[1];
     else
       now_dua_key=dua_key[2];
@@ -42,16 +42,23 @@ class Home extends StatelessWidget {
 //          HeaderWithSearchBox(size: size),
           TitleWithMoreBtn(title: "Dua", press: () {}),
           SizedBox(height: 8),
-          CardUI(title:now_dua_key,content:dua_small[now_dua_key]),
+          if(now_dua_key=='Ramadaan Dua')
+            CardUI_Long(title:now_dua_key,content:dua_small[now_dua_key]),
+          if(now_dua_key!='Ramadaan Dua')
+
+            CardUI(title:now_dua_key,content:dua_small[now_dua_key]),
+
           if(now_dua_key=='Iftaar')
-            CardUI(title:'Ramadaan Dua',content:dua_small['Ramadaan Dua']),
+            CardUI_Long(title:'Ramadaan Dua',content:dua_small['Ramadaan Dua']),
 
           TitleWithMoreBtn(title: "Ashrah dua", press: () {}),
           SizedBox(height: 8),
           CardUI(title:"Rehamat Ashra",content:"يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغيثُ"),
 //          FeaturedPlants(),
          // RecomendsPlants(),
-          TitleWithMoreBtn(title: "Durood Sharif", press: () {}),
+          TitleWithMoreBtn(title: "Durood Sharif", press: () {
+
+          }),
           SizedBox(height: 8),
           CardUI(title:random_durood,content:duroodAll[random_durood]),
           //RecomendsPlants(),

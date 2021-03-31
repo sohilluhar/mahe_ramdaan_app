@@ -40,7 +40,7 @@ class _ConvexAppExampleState extends State<ConvexAppExample> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 5,
-      initialIndex: 2,
+      initialIndex: 0,
       child: Scaffold(
           appBar: AppBar(
             // Here we take the value from the MyHomePage object that was created by
@@ -57,7 +57,6 @@ class _ConvexAppExampleState extends State<ConvexAppExample> {
               child: TabBarView(
                 children: [
                   Home(),
-
                   Durood(),
                   MyHomePage(title:"test"),
                   Icon(Icons.people, size: 64),

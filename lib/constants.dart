@@ -56,7 +56,66 @@ const dua_small=<String,String>{
   'Maghfirat Ashra':'اَسْتَغْفِرُ اللہَ رَبِّی مِنْ کُلِّ زَنْبٍ وَّ اَتُوْبُ اِلَیْہِ',
   'Jahannam Najaat':'اَللَّهُمَّ أَجِرْنِي مِنَ النَّارِ',
   'Sab E Qadr':'اَللّٰہُمَّ اِنَّکَ عَفُوّتُحِبُّ الْعَفْوَفَاعْفُ عَنِّ',
-  'Ramadaan Dua':'Long Dua'
+  'Ramadaan Dua':
+  """● Ae Allah hamri jaban par kalmae tayybah hamesha jari rakh
+  
+● Ae Allah hame kamil iman naseeb farma aur puri hidayat ataa farma
+
+● Ae Allah hame pure ramadaan neamate ,anvaa va barkat se malamal
+
+● Ae Allah hap par apni rehmat najil farma,karam ki barish farma aur rizke halat ataa farma
+
+● Ae Allah hame deene islam ke ehkam par mukammal taur par amal karne vala bana de
+
+● Ae Allah tu hame apna mohataj bana kisi gair ka mohataj na bana
+
+● Ae Allah hame lailatul qadr naseeb farma
+
+● Ae Allah haje maqbool va mamabroor naseeb farma
+
+● Ae Allah hame joth,bughaz va keenah,buraia jagade, fasad se door rakh
+
+● Ae Allah hamse tangdasti khouf ghabrahat aur karj ke boj do farma
+
+● Ae Allah hamare sgeerah aur kabeerah gunaaho ko maaf farma
+
+● Ae Allah humko dajjal ke fitne, shaitan aur nafs ke shar se mafuj rakh
+
+● Ae Allah aurton ko parde ki poori poori pabandi karne ki toufik ataa farma
+
+● Ae Allah har choti badi bimari se hame aur kul momineen va mominaat ko mahfooj rakh
+
+● Ae Allah hame taqwa aur paherejgari ataa farma
+
+● Ae Allah hame huzur e aqdas ﷺ ke pyare tarike par kaym rakh
+
+● Ae Allah hame huzur e aqram ﷺ ki sunnat par chalne ki toufik ataa farma
+
+● Ae Allah  hame kayaamat ke din huzur ﷺ ke hatho se jame kausar naseeb farma
+
+● Ae Allah hame kayamat kee din huzur ﷺ ki shifaat naseeb farma
+
+● Ae Allah tu apni mohabbat aur hamare aqa ﷺ mohabbat hamre dilo mein dalde
+
+● Ae Allah hame maut ki sakhti aur kabr ke ajaab se bachaa
+
+● Ae Allah munkar nakeer ke sawalat aasan farma
+
+● Ae Allah hame kayamat ke roz apna deedar naseeb farma
+
+● Ae Allah hame jannatul firdos me jagah ataa farma
+
+● Ae Allah hame kayam at ki garmi aur jahannum ki aag se mahfuz farma
+
+● Ae Allah hame tamaam momineen va mominaat ko hashr ki rusvayio se bacha
+
+● Ae Allah naam aamal hamre dahine hath me naseeb farma
+
+● Ae Allah apne arsh ke saye me jagah ataa farma
+
+● Ae Allah pul sirrat par bijli ki tarah gujrne ki toufik ataa frama
+
+● Ae Allah hame dono jaha me rasoole paak ﷺ ka gulam banae rakh"""
 };
 
 
