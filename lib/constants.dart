@@ -7,6 +7,9 @@ const kTextColor = Color(0xFF3C4046);
 const kBackgroundColor = Color(0xFFF9F8FD);
 
 const double kDefaultPadding = 20.0;
+//1 - Gujrati
+//0 - Hindi / English
+const lang_opt="Guj";
 
 const duroodAll =<String, String>{
   'Durood e Shafa':'اَللّٰھُمَّ صَلِّ وَ سَلِّمْ وَ بَارِکْ عَلٰی حَبِیْبِکَ شَفِیْعِ الْمُذْنِبِیْنَ وَ عَلٰٓی اٰلِہٖ وَ اَصْحَابِہٖ اَجْمَعِیْنَ',
@@ -61,21 +64,21 @@ const dua_small=<String,String>{
   
 ● Ae Allah hame kamil iman naseeb farma aur puri hidayat ataa farma
 
-● Ae Allah hame pure ramadaan neamate ,anvaa va barkat se malamal
+● Ae Allah hame pure ramadaan neamate ,anvaa va barkat se malamal farma
 
-● Ae Allah hap par apni rehmat najil farma,karam ki barish farma aur rizke halat ataa farma
+● Ae Allah ham par apni rehmat najil farma,karam ki barish farma aur rizke halat ataa farma
 
 ● Ae Allah hame deene islam ke ehkam par mukammal taur par amal karne vala bana de
 
-● Ae Allah tu hame apna mohataj bana kisi gair ka mohataj na bana
+● Ae Allah tu hame apna mohataj rakh kisi gair ka mohataj na bana
 
 ● Ae Allah hame lailatul qadr naseeb farma
 
-● Ae Allah haje maqbool va mamabroor naseeb farma
+● Ae Allah haje maqbool va mabroor naseeb farma
 
 ● Ae Allah hame joth,bughaz va keenah,buraia jagade, fasad se door rakh
 
-● Ae Allah hamse tangdasti khouf ghabrahat aur karj ke boj do farma
+● Ae Allah hamse tangdasti khauf ghabhrahat aur karj ke boj ko door farma
 
 ● Ae Allah hamare sgeerah aur kabeerah gunaaho ko maaf farma
 
@@ -118,5 +121,160 @@ const dua_small=<String,String>{
 ● Ae Allah hame dono jaha me rasoole paak ﷺ ka gulam banae rakh"""
 };
 
+const dua_small_guj=<String,List>{
+  'Moon Sigth': ['ચાંદ કો દેખને કી દુઆ', 'ચાંદ કો દેખને કી દુઆ'],
+  'Saheri': ['સહેરી', 'નવયતુ અન અસૂમ ગદન લિલ્લાહિ ત્આલા મિન ફર્ઝે રમઝાન હાઝા'],
+  'Iftaar': [
+    'ઈફ્તાર',
+    'અલ્લાહુમ્મા ઈન્ની લક સુમતુ વબિકા આમન્તુ વ અલયક તવક્કલ્તુ વ અલા રિઝકિક અફ્તરતુ ફત કબ્બલ મિન્ની'
+  ],
+  'Taraweeh': ['તરાવીહ',
+    """સુબ્હાનલ મલિકિલ કુદ્દુસ સુબ્હાન ઝિલ્મૂલકી વલ્મલકુત, 
+સુબ્હાન ઝીલ્ઈઝઝતી  વલઅઝમતિ વલ્હયબતિ વલ્કુદરતિ વલ્કિબરિયાઈ  વલ્જબરૂત, 
+સુબ્હાનલ મલિકીલ હૈય્યીલ્લઝી  લા યનામુ વલા યમુત,
+સુબ્બુહુન કુદદુસુન રબ્બુના વરબ્બુલ મલાઈકતિ વરરૂહ, 
+અલ્લાહુમ્મા અજીરના મિન્નાર,યા મુજીરુ યા મુજીરુ યા મુજીરુ."""
+  ],
+  'Rehamat Ashra': ['રેહમત કા અશરાહ', 'રેહમત કા અશરાહ'],
+  'Maghfirat Ashra': ['મગફિરત કા અશરાહ', 'મગફિરત કા અશરાહ'],
+  'Jahannam Najaat': ['જહન્નમ સે નજાત કા અશરાહ', 'જહન્નમ સે નજાત કા અશરાહ'],
+  'Sab E Qadr': [
+    'શબેકદ્ર ',
+    'અલ્લાહુમ્મા ઇન્ન-ક અફૂવવુન તુહિબ્બુલ અફવ ફઅ-ફૂ અન્ની'
+  ],
+  'Ramadaan Dua': ['રમઝાન દુઆ'
+    , """● અય અલ્લાહ પુરા પુરા ઈમાન અતા ફર્મા
 
+● અય અલ્લાહ જહન્નમ કે અઝાબસે પુરી હિફાઝત ફર્મા
+
+● અય અલ્લાહ જન્નતુલ ફિરદૌસમે જગા અતા ફર્મા
+
+● અય અલ્લાહ તું હમસે રાઝી હોજા
+
+● અય અલ્લાહ તેરે હુકમ પર ચલને વાલા બનાદે
+
+● અય અલ્લાહ પયગમ્બર સલ્લલાહો અલઈહે વ સલ્લમ  કે તરીકે પર ચલના હમેં આસાન ફર્મા
+
+● અય અલ્લાહ ગૈબસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ જૂઠસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ ઇખ્લાસવાલી ઝીંદગી નસીબ ફર્મા
+
+● અય અલ્લાહ મૌત સખ્તીસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ કબ્રકી સખ્તીસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ પુલ-સીરાત પર ચલના આસાન ફર્મા
+
+● અય અલ્લાહ બગર હિસાબ કિતાબ કે જન્નતમેં દાખિલ ફર્મા
+
+● અય અલ્લાહ દુનિયા ઔર આખેરતકી રૂષવાઈસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ દુનિયા ઔર આખેરતકી ભલાઈ નસીબ ફર્મા
+
+● અય અલ્લાહ હલાલ રોઝી અતા ફર્મા
+
+● અય અલ્લાહ તેરે સિવા કિસીકા મોહતાજ ન બના
+
+● અય અલ્લાહ પુરી પુરી પાબંદી નસીબ ફર્મા
+
+● અય અલ્લાહ દજ્જાલકે ફીતનો સે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ દાહને હથમેં આમાલનામાં નસીબ ફર્મા
+
+● અય અલ્લાહ નફ્સકી શરારતસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ હજ્જે બયતુલ્લાહ નસીબ ફર્મા
+
+● અય અલ્લાહ લમ્હા બરાબર ભી દુનિયા કે હવાલે ન કર
+
+● અય અલ્લાહ છોટી બડી બીમારીસે તમામ ઉમ્મતકી હિફાઝત ફર્મા
+
+● અય અલ્લાહ હુઝૂર સલ્લલાહો અલઈહે વ સલ્લમ કે સચ્ચે ઉમ્મતી બના
+
+● અય અલ્લાહ હુઝૂર સલ્લલાહો અલઈહે વ સલ્લમ કે દસ્તે મુબારકસે જામે કૌશર નસીબ ફર્મા
+
+● અય અલ્લાહ હુઝૂર સલ્લલાહો અલઈહે વ સલ્લમ  કી મિન્નત હમારે લિએ કબુલ ફર્મા
+
+● અય અલ્લાહ હમેં તેરી મહોબ્બત વાલી ઝીંદગી નસીબ ફર્મા
+
+● અય અલ્લાહ હસદ સે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ અંબિયા ઔલિયા ઔર મુત્તકી કે સદકે તુફેલ મેં હમારી સારી દુઆએ કબુલ ફર્મા
+  """
+  ],
+
+
+};
+
+const dua_small_hindi=<String,String>{
+  'Moon Sigth':'Allahumma ahlilhu `alainā bil-yumni wal-iman, was-salamati wal-Islam, rabbi wa rabbuk Allah',
+  'Saheri':'Wa bisawmi ghadinn nawaiytu min shahri Ramadan',
+  'Iftaar':'Allahumma inni laka sumtu wa ala rizq-ika-aftartu',
+  'Taraweeh':'',
+  'Rehamat Ashra':'Ya Hayyu Ya Qayyum bi rehmatika astaghees',
+  'Maghfirat Ashra' : 'Astagfirullaha rab-bi min kulli zambiyon wa-atoobuilaiyh',
+  'Jahannam Najaat':'Allahumma Ajirni minan naar',
+  'Sab E Qadr':'Allahumma inna ka afuvvun tuhibbul afava fa fu',
+
+};
+
+var tmp= {"Ramadaan Dua 2": ['રમઝાન દુઆ', """● એ અલ્લાહ હમારી જબન પાર કલમયે તાયબહ હમેશા જરી રાખ
+  
+એ અલ્લાહ હમે કામિલ ઇમાન નસીબ ફર્મા ઓર પુરી હિદાયત આતા ફર્મા
+
+● એ અલ્લાહ હમે પુરે રામદાન નેમાતે, અનવાર વ બરકત સે મલમલ ફર્મા 
+
+● એ અલ્લાહ હમ પર અપની રેહમત નાજિલ ફર્મા, કરમ કી બરીશ ફર્મા ઓર રિઝકે હલાત આતા ફર્મા
+
+● એ અલ્લાહ હમે દિને ઇસ્લામ કે એહકમ પર મુકમ્મલ તૌર પર અમલ કરને વાલા બના દે
+
+● એ અલ્લાહ તું હમે અપના મોહતાજ રખ કિસી ગૈર કા મોહતાજ ના બનાના
+
+● એ અલ્લાહ હમે લૈલતુલ કદર નસીબ ફર્મા
+
+● એ અલ્લાહ હજે મકબુલ વ મબરૂર નસીબ ફર્મા 
+
+● એ અલ્લાહ હમે જુઢ, બુગઝ વ કીના, બુરાઇ જગડે, ફસાદ સે દૂર રખ
+
+● એ અલ્લાહ હમસે તંગદસ્તિ ખૌફ, ગભરાહત ઓર કરઝ કે બોજ  કો દૂર ફર્મા
+
+● એ અલ્લાહ હમારે શગીર ઓર કબીરહ ગુનાહો કો માફ ફર્મા
+
+● એ અલ્લાહ હમકો દજાલ કે ફીતને,શૈતાન ઔર નફ્સ કે સર સે મહફુજ રખ
+
+● એ અલ્લાહ ઓરતો કો પરદે કી પુરી પુરી  પાબંડી કરને કી તોફીક  અતા ફર્મા
+
+● એ અલ્લાહ હર છોટી બડી બિમારી સે હમે ઓર કુલ મોમિનિન વ મોમીનાત કો મહફૂજ રખ
+
+● એ અલ્લાહ હમે તક્વા ઓર પહેરેજગારી અતા ફાર્મા
+
+● એ અલ્લાહ હમે હઝુર એ અકદાસ ﷺ કે પ્યાર તરીકે પર કાયમ રખ
+
+● એ અલ્લાહ હમે હઝુર એ અકરમ ﷺ કી સુન્નત પર ચલને  કી તૌફીક અતા ફર્મા
+
+● એ અલ્લાહ હમે ક્યામત કે દિન હઝુર ﷺ કે હાથો સે  ઝામ એ  કૌસર નસીબ ફર્મા
+
+● એ અલ્લાહ હમે ક્યામત કી દિન હઝુર ﷺ કી  શફાઅત નસીબ ફર્મા
+
+● એ અલ્લાહ તૂ અપની મોહબ્બત ઓર હમારે આકા ﷺ મોહબ્બત હમારે દિલો મેં દાલ દે
+
+● એ અલ્લાહ હમે ક્યામત કે રોઝ અપના દીદાર નસીબ ફર્મા
+
+● એ અલ્લાહ હમે જન્નતુલ ફિરદૌસ મે જગાહ અતા ફર્મા
+
+● એ અલ્લાહ હમે કયામત કી ગર્મી  ઓર  જહાન્નુમ કી આગ સે મહફુઝ ફર્મા
+
+● એ અલ્લાહ હમે ઓર તમામ  મોમિનિન વ મોમીનાત કો હશ્ર કી રુસવાયીઓ સે બચા
+
+● એ અલ્લાહ નામ એ આમલ હમારે દાહિને હાથ મેં નસીબ ફર્મા
+
+● એ અલ્લાહ અપને અર્શ કે સાએમે જાગહ અતા ફર્મા
+
+● એ અલ્લાહ પુલ સિરાત પર બીજલી કી તરહ ગુર્ઝરને કી તૌફીક અતા ફર્મા
+
+● એ અલ્લાહ હમે દોનો જહામે રસૂલ એ પાક ﷺ કા ગુલામ બના  કે રખ 
+  """
+]};
 

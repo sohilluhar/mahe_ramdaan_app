@@ -9,12 +9,17 @@ import 'components/title_with_more_bbtn.dart';
 
 class Home extends StatelessWidget {
 
+  DateTime now = DateTime. now();
+  var random_durood=duroodAll.keys.elementAt(new Random().nextInt(duroodAll.length));
+
+  var saheritime=3.20;
+  var iftartime=3.0;
+  var now_dua_key;
+
   @override
   Widget build(BuildContext context) {
     // It will provie us total height  and width of our screen
     Size size = MediaQuery.of(context).size;
-    final DateTime now = DateTime. now();
-    var random_durood=duroodAll.keys.elementAt(new Random().nextInt(duroodAll.length));
     var c_day=now.weekday;
     if(now.weekday==4)
       random_durood='Durood e Shab e Jummah';
@@ -22,9 +27,6 @@ class Home extends StatelessWidget {
       random_durood='Durood e Jummah';
 
     var c_time=now.hour;
-    var saheritime=4.20;
-    var iftartime=7.0;
-    var now_dua_key;
     print(c_day);
 
     if(c_time<saheritime+1 && c_time>saheritime-1)
@@ -42,14 +44,8 @@ class Home extends StatelessWidget {
 //          HeaderWithSearchBox(size: size),
           TitleWithMoreBtn(title: "Dua", press: () {}),
           SizedBox(height: 8),
-          if(now_dua_key=='Ramadaan Dua')
-            CardUI_Long(title:now_dua_key,content:dua_small[now_dua_key]),
-          if(now_dua_key!='Ramadaan Dua')
 
-            CardUI(title:now_dua_key,content:dua_small[now_dua_key]),
-
-          if(now_dua_key=='Iftaar')
-            CardUI_Long(title:'Ramadaan Dua',content:dua_small['Ramadaan Dua']),
+        return_dua(),
 
           TitleWithMoreBtn(title: "Ashrah dua", press: () {}),
           SizedBox(height: 8),
@@ -67,5 +63,18 @@ class Home extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  return_dua() {
+    List<dynamic> list;
+
+    if(lang_opt=="Guj"){
+
+        return CardUI(title:dua_small_guj[now_dua_key][0],content:dua_small[now_dua_key]+"\n\n"+dua_small_guj[now_dua_key][1]);
+   }   else{
+        return CardUI(title:now_dua_key,content:dua_small[now_dua_key]+"\n\n"+dua_small_hindi[now_dua_key]);
+   }
+
+
   }
 }

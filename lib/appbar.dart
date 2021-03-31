@@ -1,10 +1,12 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:mahe_ramdaan_app/components/recomend_plants.dart';
+import 'package:mahe_ramdaan_app/test_guj.dart';
 import '../NewPage.dart';
 import 'components/body.dart';
 import 'components/mydrawer.dart';
 import 'constants.dart';
+import 'counterpg.dart';
 import 'durood.dart';
 import 'home.dart';
 import '../demo-card.dart';
@@ -35,33 +37,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
 
-    const drawerHeader = UserAccountsDrawerHeader(
-      accountName: Text('User Name'),
-      accountEmail: Text('user.name@email.com'),
-      currentAccountPicture: CircleAvatar(
-        backgroundColor: Colors.white,
-        child: FlutterLogo(size: 42.0),
-      ),
-
-    );
-    final drawerItems = ListView(
-      children: <Widget>[
-        drawerHeader,
-        ListTile(
-          tileColor: Colors.white,
-          title: const Text('To page 1'),
-          onTap: () => Navigator.of(context).push(NewPage(1)),
-        ),
-        ListTile(
-          title: const Text('To page 2'),
-      onTap: () => Navigator.of(context).push(NewPage(2)),
-        ),
-        ListTile(
-          title: const Text('other drawer item'),
-          onTap: () {},
-        ),
-      ],
-    );
 
 
     return DefaultTabController(
@@ -84,8 +59,8 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Home(),
                   Durood(),
-                  MyHomePage(title:"test"),
-                  Icon(Icons.people, size: 64),
+                  CounterPg(title:"test"),
+                  Guj_test(),
                   Icon(Icons.people, size: 64),
                   ],
               ),
