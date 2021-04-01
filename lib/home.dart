@@ -1,19 +1,31 @@
 import 'dart:math';
+import 'dart:ui';
 
 import
 'package:flutter/material.dart';
+import 'package:hijri/hijri_calendar.dart';
+import 'package:intl/intl.dart';
 import 'package:mahe_ramdaan_app/constants.dart';
+import 'api_response.dart';
 import 'components/card_ui.dart';
 import 'components/title_with_more_bbtn.dart';
 
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
 
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   DateTime now = DateTime. now();
+
   var random_durood=duroodAll.keys.elementAt(new Random().nextInt(duroodAll.length));
 
-  var saheritime=3.20;
-  var iftartime=3.0;
+  var saheritime=5.20;
+
+  var iftartime=7.0;
+
   var now_dua_key;
 
   @override
@@ -26,23 +38,68 @@ class Home extends StatelessWidget {
     else if(now.weekday==5)
       random_durood='Durood e Jummah';
 
-    var c_time=now.hour;
+    var c_time_hr=now.hour;
     print(c_day);
 
-    if(c_time<saheritime+1 && c_time>saheritime-1)
+    if(c_time_hr<saheritime+1 && c_time_hr>saheritime-1)
       now_dua_key=dua_key[0];
-    else if(c_time<iftartime+1 && c_time>iftartime-1)
-      now_dua_key=dua_key[1];
     else
-      now_dua_key=dua_key[2];
+//      (c_time<iftartime+1 && c_time>iftartime-1)
+      now_dua_key=dua_key[1];
+//    else
+//      now_dua_key=dua_key[2];
+//    var df = ;
 
+    String cTime=new  DateFormat('hh:mm a').format(now).toString();
+    String cDate=new  DateFormat('EEE, d MMMM y').format(now).toString();
+    var today_hijri = new HijriCalendar.now();
+
+    var timeMaghrib= makeGetRequest();
     // it enable scrolling on small device
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
 //          HeaderWithSearchBox(size: size),
-          TitleWithMoreBtn(title: "Dua", press: () {}),
+          SizedBox(height: 8),
+
+          Container(
+            decoration: BoxDecoration(
+              color: kPrimaryColor.withOpacity(0.2),
+              borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                  bottomLeft: Radius.circular(10),
+                  bottomRight: Radius.circular(10)
+              ),
+
+            ),
+
+            padding: EdgeInsets.all(16),
+//            color: kPrimaryColor.withOpacity(0.2),
+            width: size.width*0.9,
+            child: Column(children: [
+              Text(cTime,textAlign: TextAlign.justify,
+              style: TextStyle(fontSize: 24,color: Colors.black,fontWeight: FontWeight.bold)),
+             SizedBox(height: 8,),
+              Text(cDate,textAlign: TextAlign.justify,
+              style: TextStyle(fontSize: 18,color: Colors.black,),
+            ), SizedBox(height: 8,),
+              Text(today_hijri.toFormat("dd MMMM yyyy").toString(),textAlign: TextAlign.justify,
+                style: TextStyle(fontSize: 18,color: Colors.black,),
+              ), SizedBox(height: 8,),
+              Text(timeMaghrib.toString(),textAlign: TextAlign.justify,
+                style: TextStyle(fontSize: 18,color: Colors.black,),
+              )
+
+
+            ])
+
+
+        ),
+
+
+        TitleWithMoreBtn(title: "Dua", press: () {}),
           SizedBox(height: 8),
 
         return_dua(),
@@ -50,8 +107,7 @@ class Home extends StatelessWidget {
           TitleWithMoreBtn(title: "Ashrah dua", press: () {}),
           SizedBox(height: 8),
           CardUI(title:"Rehamat Ashra",content:"يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغيثُ"),
-//          FeaturedPlants(),
-         // RecomendsPlants(),
+
           TitleWithMoreBtn(title: "Durood Sharif", press: () {
 
           }),

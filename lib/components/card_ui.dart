@@ -58,7 +58,7 @@ return
 
                   content,
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24,color: Colors.black),
+                  style: TextStyle(fontSize: 20,color: Colors.black),
                 ),),
               SizedBox(height: 24),
 
