@@ -32,9 +32,14 @@ class _CounterPgState extends State<CounterPg> {
   @override
   Widget build(BuildContext context) {
 
-    return Scaffold(
+    return
+
+
+      Scaffold(
+
 
       body: Center(
+
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -51,10 +56,12 @@ class _CounterPgState extends State<CounterPg> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add_circle_outline),
       ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+      )
+   ;
   }
 }

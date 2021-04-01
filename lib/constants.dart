@@ -208,6 +208,129 @@ const dua_small_guj=<String,List>{
 
 };
 
+const mahe_ramadaan_special_dua=
+<String,String>{'Ramadaan Dua':"""● Ae Allah hamri jaban par kalmae tayybah hamesha jari rakh
+  
+● Ae Allah hame kamil iman naseeb farma aur puri hidayat ataa farma
+
+● Ae Allah hame pure ramadaan neamate ,anvaa va barkat se malamal farma
+
+● Ae Allah ham par apni rehmat najil farma,karam ki barish farma aur rizke halat ataa farma
+
+● Ae Allah hame deene islam ke ehkam par mukammal taur par amal karne vala bana de
+
+● Ae Allah tu hame apna mohataj rakh kisi gair ka mohataj na bana
+
+● Ae Allah hame lailatul qadr naseeb farma
+
+● Ae Allah haje maqbool va mabroor naseeb farma
+
+● Ae Allah hame joth,bughaz va keenah,buraia jagade, fasad se door rakh
+
+● Ae Allah hamse tangdasti khauf ghabhrahat aur karj ke boj ko door farma
+
+● Ae Allah hamare sgeerah aur kabeerah gunaaho ko maaf farma
+
+● Ae Allah humko dajjal ke fitne, shaitan aur nafs ke shar se mafuj rakh
+
+● Ae Allah aurton ko parde ki poori poori pabandi karne ki toufik ataa farma
+
+● Ae Allah har choti badi bimari se hame aur kul momineen va mominaat ko mahfooj rakh
+
+● Ae Allah hame taqwa aur paherejgari ataa farma
+
+● Ae Allah hame huzur e aqdas ﷺ ke pyare tarike par kaym rakh
+
+● Ae Allah hame huzur e aqram ﷺ ki sunnat par chalne ki toufik ataa farma
+
+● Ae Allah  hame kayaamat ke din huzur ﷺ ke hatho se jame kausar naseeb farma
+
+● Ae Allah hame kayamat kee din huzur ﷺ ki shifaat naseeb farma
+
+● Ae Allah tu apni mohabbat aur hamare aqa ﷺ mohabbat hamre dilo mein dalde
+
+● Ae Allah hame maut ki sakhti aur kabr ke ajaab se bachaa
+
+● Ae Allah munkar nakeer ke sawalat aasan farma
+
+● Ae Allah hame kayamat ke roz apna deedar naseeb farma
+
+● Ae Allah hame jannatul firdos me jagah ataa farma
+
+● Ae Allah hame kayam at ki garmi aur jahannum ki aag se mahfuz farma
+
+● Ae Allah hame tamaam momineen va mominaat ko hashr ki rusvayio se bacha
+
+● Ae Allah naam aamal hamre dahine hath me naseeb farma
+
+● Ae Allah apne arsh ke saye me jagah ataa farma
+
+● Ae Allah pul sirrat par bijli ki tarah gujrne ki toufik ataa frama
+
+● Ae Allah hame dono jaha me rasoole paak ﷺ ka gulam banae rakh"""};
+
+
+const mahe_ramadaan_special_dua_guj=<String,String>{'રમઝાન દુઆ': """● અય અલ્લાહ પુરા પુરા ઈમાન અતા ફર્મા
+
+● અય અલ્લાહ જહન્નમ કે અઝાબસે પુરી હિફાઝત ફર્મા
+
+● અય અલ્લાહ જન્નતુલ ફિરદૌસમે જગા અતા ફર્મા
+
+● અય અલ્લાહ તું હમસે રાઝી હોજા
+
+● અય અલ્લાહ તેરે હુકમ પર ચલને વાલા બનાદે
+
+● અય અલ્લાહ પયગમ્બર સલ્લલાહો અલઈહે વ સલ્લમ  કે તરીકે પર ચલના હમેં આસાન ફર્મા
+
+● અય અલ્લાહ ગૈબસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ જૂઠસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ ઇખ્લાસવાલી ઝીંદગી નસીબ ફર્મા
+
+● અય અલ્લાહ મૌત સખ્તીસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ કબ્રકી સખ્તીસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ પુલ-સીરાત પર ચલના આસાન ફર્મા
+
+● અય અલ્લાહ બગર હિસાબ કિતાબ કે જન્નતમેં દાખિલ ફર્મા
+
+● અય અલ્લાહ દુનિયા ઔર આખેરતકી રૂષવાઈસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ દુનિયા ઔર આખેરતકી ભલાઈ નસીબ ફર્મા
+
+● અય અલ્લાહ હલાલ રોઝી અતા ફર્મા
+
+● અય અલ્લાહ તેરે સિવા કિસીકા મોહતાજ ન બના
+
+● અય અલ્લાહ પુરી પુરી પાબંદી નસીબ ફર્મા
+
+● અય અલ્લાહ દજ્જાલકે ફીતનો સે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ દાહને હથમેં આમાલનામાં નસીબ ફર્મા
+
+● અય અલ્લાહ નફ્સકી શરારતસે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ હજ્જે બયતુલ્લાહ નસીબ ફર્મા
+
+● અય અલ્લાહ લમ્હા બરાબર ભી દુનિયા કે હવાલે ન કર
+
+● અય અલ્લાહ છોટી બડી બીમારીસે તમામ ઉમ્મતકી હિફાઝત ફર્મા
+
+● અય અલ્લાહ હુઝૂર સલ્લલાહો અલઈહે વ સલ્લમ કે સચ્ચે ઉમ્મતી બના
+
+● અય અલ્લાહ હુઝૂર સલ્લલાહો અલઈહે વ સલ્લમ કે દસ્તે મુબારકસે જામે કૌશર નસીબ ફર્મા
+
+● અય અલ્લાહ હુઝૂર સલ્લલાહો અલઈહે વ સલ્લમ  કી મિન્નત હમારે લિએ કબુલ ફર્મા
+
+● અય અલ્લાહ હમેં તેરી મહોબ્બત વાલી ઝીંદગી નસીબ ફર્મા
+
+● અય અલ્લાહ હસદ સે હમારી હિફાઝત ફર્મા
+
+● અય અલ્લાહ અંબિયા ઔલિયા ઔર મુત્તકી કે સદકે તુફેલ મેં હમારી સારી દુઆએ કબુલ ફર્મા
+  """};
+
 const dua_small_hindi=<String,String>{
   'Moon Sigth':'Allahumma ahlilhu `alainā bil-yumni wal-iman, was-salamati wal-Islam, rabbi wa rabbuk Allah',
   'Saheri':'Wa bisawmi ghadinn nawaiytu min shahri Ramadan',

@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: kPrimaryColor_123,
       ),
-      home: HomePage(title:"Home Page"),
+      home: HomePage(title:"Home"),
 
     );
   }

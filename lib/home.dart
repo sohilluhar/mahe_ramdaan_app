@@ -6,6 +6,8 @@ import
 import 'package:hijri/hijri_calendar.dart';
 import 'package:intl/intl.dart';
 import 'package:mahe_ramdaan_app/constants.dart';
+import 'Special_dua_Gujarati.dart';
+import 'Special_dua_Hindi.dart';
 import 'api_response.dart';
 import 'components/card_ui.dart';
 import 'components/title_with_more_bbtn.dart';
@@ -32,6 +34,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     // It will provie us total height  and width of our screen
     Size size = MediaQuery.of(context).size;
+    var size_wi=size.width*0.9;
     var c_day=now.weekday;
     if(now.weekday==4)
       random_durood='Durood e Shab e Jummah';
@@ -55,12 +58,13 @@ class _HomeState extends State<Home> {
     var today_hijri = new HijriCalendar.now();
 
     var timeMaghrib= makeGetRequest();
+
     // it enable scrolling on small device
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-//          HeaderWithSearchBox(size: size),
+
           SizedBox(height: 8),
 
           Container(
@@ -79,9 +83,9 @@ class _HomeState extends State<Home> {
 //            color: kPrimaryColor.withOpacity(0.2),
             width: size.width*0.9,
             child: Column(children: [
-              Text(cTime,textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 24,color: Colors.black,fontWeight: FontWeight.bold)),
-             SizedBox(height: 8,),
+//              Text(cTime,textAlign: TextAlign.justify,
+//              style: TextStyle(fontSize: 24,color: Colors.black,fontWeight: FontWeight.bold)),
+//             SizedBox(height: 8,),
               Text(cDate,textAlign: TextAlign.justify,
               style: TextStyle(fontSize: 18,color: Colors.black,),
             ), SizedBox(height: 8,),
@@ -91,21 +95,64 @@ class _HomeState extends State<Home> {
               Text(timeMaghrib.toString(),textAlign: TextAlign.justify,
                 style: TextStyle(fontSize: 18,color: Colors.black,),
               )
-
-
             ])
-
-
         ),
 
 
         TitleWithMoreBtn(title: "Dua", press: () {}),
           SizedBox(height: 8),
 
-        return_dua(),
+         return_dua(),
 
+
+            Card(
+color: kPrimaryColor,
+              margin: EdgeInsets.only(left:size_wi*0.05,right:size_wi*0.05 ),
+            child: InkWell(
+
+              splashColor: kPrimaryColor.withOpacity(0.1),
+              onTap: () {
+if(lang_opt!='Guj')
+  Navigator.of(context).push(Mahe_ramadaan_special_dua_hindi());
+  else
+  Navigator.of(context).push(Mahe_ramadaan_special_dua_guj());
+              },
+              child:
+              ListTile(
+                  title:  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+
+                      Text(
+
+                        "Mahe Ramadaan Special Dua",
+                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  trailing:  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      IconButton(
+                        alignment: Alignment.center,
+                        color: Colors.white,
+                          icon:  Icon(Icons.arrow_forward_ios),
+                          onPressed: (){
+                            if(lang_opt!='Guj')
+                              Navigator.of(context).push(Mahe_ramadaan_special_dua_hindi());
+                            else
+                              Navigator.of(context).push(Mahe_ramadaan_special_dua_guj());
+                          }
+                      )
+                    ],
+                  ),
+
+              ))
+          ),
+          SizedBox(height:24),
           TitleWithMoreBtn(title: "Ashrah dua", press: () {}),
           SizedBox(height: 8),
+
           CardUI(title:"Rehamat Ashra",content:"يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغيثُ"),
 
           TitleWithMoreBtn(title: "Durood Sharif", press: () {
