@@ -5,6 +5,7 @@ import
 'package:flutter/material.dart';
 import 'package:hijri/hijri_calendar.dart';
 import 'package:intl/intl.dart';
+import 'package:mahe_ramdaan_app/Model/Timing_data.dart';
 import 'package:mahe_ramdaan_app/constants.dart';
 import 'Special_dua_Gujarati.dart';
 import 'Special_dua_Hindi.dart';
@@ -23,161 +24,235 @@ class _HomeState extends State<Home> {
   DateTime now = DateTime. now();
 
   var random_durood=duroodAll.keys.elementAt(new Random().nextInt(duroodAll.length));
-
-  var saheritime=5.20;
-
-  var iftartime=7.0;
-
   var now_dua_key;
+
+  Future<Timing_Data> timing_data;
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    timing_data=makeGetRequest();
+  }
+
 
   @override
   Widget build(BuildContext context) {
     // It will provie us total height  and width of our screen
     Size size = MediaQuery.of(context).size;
-    var size_wi=size.width*0.9;
-    var c_day=now.weekday;
+    var sizeWi=size.width*0.9;
+    var cDay=now.weekday;
     if(now.weekday==4)
       random_durood='Durood e Shab e Jummah';
     else if(now.weekday==5)
       random_durood='Durood e Jummah';
 
-    var c_time_hr=now.hour;
-    print(c_day);
+    print(cDay);
 
-    if(c_time_hr<saheritime+1 && c_time_hr>saheritime-1)
-      now_dua_key=dua_key[0];
-    else
-//      (c_time<iftartime+1 && c_time>iftartime-1)
-      now_dua_key=dua_key[1];
-//    else
-//      now_dua_key=dua_key[2];
-//    var df = ;
+
 
     String cTime=new  DateFormat('hh:mm a').format(now).toString();
     String cDate=new  DateFormat('EEE, d MMMM y').format(now).toString();
-    var today_hijri = new HijriCalendar.now();
+    var todayHijri = new HijriCalendar.now();
 
-    var timeMaghrib= makeGetRequest();
+
 
     // it enable scrolling on small device
     return SingleChildScrollView(
-      child: Column(
+      child:
+
+FutureBuilder<Timing_Data>(
+
+  future:timing_data,
+  builder:(context,snapshot){
+    if(snapshot.hasData){
+     return Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
 
           SizedBox(height: 8),
 
           Container(
-            decoration: BoxDecoration(
-              color: kPrimaryColor.withOpacity(0.2),
-              borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(10),
-                  topRight: Radius.circular(10),
-                  bottomLeft: Radius.circular(10),
-                  bottomRight: Radius.circular(10)
+              decoration: BoxDecoration(
+                color: kPrimaryColor.withOpacity(0.2),
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10)
+                ),
+
               ),
 
-            ),
-
-            padding: EdgeInsets.all(16),
+              padding: EdgeInsets.all(16),
 //            color: kPrimaryColor.withOpacity(0.2),
-            width: size.width*0.9,
-            child: Column(children: [
+              width: size.width*0.9,
+              child: Column(children: [
 //              Text(cTime,textAlign: TextAlign.justify,
 //              style: TextStyle(fontSize: 24,color: Colors.black,fontWeight: FontWeight.bold)),
 //             SizedBox(height: 8,),
-              Text(cDate,textAlign: TextAlign.justify,
-              style: TextStyle(fontSize: 18,color: Colors.black,),
-            ), SizedBox(height: 8,),
-              Text(today_hijri.toFormat("dd MMMM yyyy").toString(),textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 18,color: Colors.black,),
-              ), SizedBox(height: 8,),
-              Text(timeMaghrib.toString(),textAlign: TextAlign.justify,
-                style: TextStyle(fontSize: 18,color: Colors.black,),
-              )
-            ])
-        ),
+                Text(cDate,textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 18,color: Colors.black,),
+                ), SizedBox(height: 8,),
+                Text(snapshot.data.hizri_date,textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 18,color: Colors.black,),
+                ), SizedBox(height: 8,),
+                Text("Saheri: "+snapshot.data.saheri,textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 18,color: Colors.black,))
+                ,Text("Iftar: "+snapshot.data.iftar,textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 18,color: Colors.black,),
+                )
+              ])
+          ),
 
 
-        TitleWithMoreBtn(title: "Dua", press: () {}),
+          TitleWithMoreBtn(title: "Dua", press: () {}),
           SizedBox(height: 8),
 
-         return_dua(),
+          return_dua(snapshot.data),
+          return_taraweeh_dua(snapshot.data),
 
+          Card(
+              color: kPrimaryColor,
+              margin: EdgeInsets.only(left:sizeWi*0.05,right:sizeWi*0.05 ),
+              child: InkWell(
 
-            Card(
-color: kPrimaryColor,
-              margin: EdgeInsets.only(left:size_wi*0.05,right:size_wi*0.05 ),
-            child: InkWell(
+                  splashColor: kPrimaryColor.withOpacity(0.1),
+                  onTap: () {
+                    if(lang_opt!='Guj')
+                      Navigator.of(context).push(Mahe_ramadaan_special_dua_hindi());
+                    else
+                      Navigator.of(context).push(Mahe_ramadaan_special_dua_guj());
+                  },
+                  child:
+                  ListTile(
+                    title:  Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
 
-              splashColor: kPrimaryColor.withOpacity(0.1),
-              onTap: () {
-if(lang_opt!='Guj')
-  Navigator.of(context).push(Mahe_ramadaan_special_dua_hindi());
-  else
-  Navigator.of(context).push(Mahe_ramadaan_special_dua_guj());
-              },
-              child:
-              ListTile(
-                  title:  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
+                        Text(
 
-                      Text(
+                          "Mahe Ramadaan Special Dua",
+                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    trailing:  Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        IconButton(
+                            alignment: Alignment.center,
+                            color: Colors.white,
+                            icon:  Icon(Icons.arrow_forward_ios),
+                            onPressed: (){
+                              if(lang_opt!='Guj')
+                                Navigator.of(context).push(Mahe_ramadaan_special_dua_hindi());
+                              else
+                                Navigator.of(context).push(Mahe_ramadaan_special_dua_guj());
+                            }
+                        )
+                      ],
+                    ),
 
-                        "Mahe Ramadaan Special Dua",
-                        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
-                      ),
-                    ],
-                  ),
-                  trailing:  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      IconButton(
-                        alignment: Alignment.center,
-                        color: Colors.white,
-                          icon:  Icon(Icons.arrow_forward_ios),
-                          onPressed: (){
-                            if(lang_opt!='Guj')
-                              Navigator.of(context).push(Mahe_ramadaan_special_dua_hindi());
-                            else
-                              Navigator.of(context).push(Mahe_ramadaan_special_dua_guj());
-                          }
-                      )
-                    ],
-                  ),
-
-              ))
+                  ))
           ),
           SizedBox(height:24),
           TitleWithMoreBtn(title: "Ashrah dua", press: () {}),
           SizedBox(height: 8),
 
-          CardUI(title:"Rehamat Ashra",content:"يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغيثُ"),
+          retun_ashrahdua(snapshot.data),
+
+
+//          CardUI(title:"Rehamat Ashra",content:"يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغيثُ"),
 
           TitleWithMoreBtn(title: "Durood Sharif", press: () {
 
           }),
           SizedBox(height: 8),
           CardUI(title:random_durood,content:duroodAll[random_durood]),
-          //RecomendsPlants(),
+          TitleWithMoreBtn(title: "Namaz Timing", press: () {
+          }),
+          SizedBox(height: 8),
+          CardUI(title:cDate,content:
+          "Fajr: "+snapshot.data.fajar+"\n"+
+          "Zohar: "+snapshot.data.zohar+"\n"+
+          "Asr: "+snapshot.data.asr+"\n"+
+          "Maghrib: "+snapshot.data.maghrib+"\n"+
+          "Isha: "+snapshot.data.isha+"\n"
+
+          ),
+
 
 
         ],
-      ),
+      );
+    }else{
+
+      return
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+          CircularProgressIndicator()
+          ]
+        );
+
+//        Center(child:CircularProgressIndicator());
+    }
+  } ,
+)
     );
   }
 
-  return_dua() {
-    List<dynamic> list;
+  return_dua(Timing_Data data) {
+
+
+    var cTimeHr=now.hour;
+
+    if(cTimeHr<data.saherihr+1 && cTimeHr>data.saherihr-1)
+      now_dua_key=dua_key[0];
+    else
+      now_dua_key=dua_key[1];
+//    now_dua_key=dua_key[0];
 
     if(lang_opt=="Guj"){
 
         return CardUI(title:dua_small_guj[now_dua_key][0],content:dua_small[now_dua_key]+"\n\n"+dua_small_guj[now_dua_key][1]);
    }   else{
-        return CardUI(title:now_dua_key,content:dua_small[now_dua_key]+"\n\n"+dua_small_hindi[now_dua_key]);
+
+        return CardUI(title:now_dua_key,content:dua_small[now_dua_key]+"\n\n"+dua_small_hindi[now_dua_key]+"\n");
    }
 
+
+  }
+
+  return_taraweeh_dua(Timing_Data data) {
+    if (now_dua_key==dua_key[1]){
+
+      if(lang_opt=="Guj"){
+      return CardUI(title:dua_small_guj["Taraweeh"][0],content:dua_small["Taraweeh"]+"\n\n"+dua_small_guj["Taraweeh"][1]+"\n");
+      }   else{
+        return CardUI(title:"Taraweeh Dua",content:dua_small["Taraweeh"]+"\n\n"+dua_small_hindi["Taraweeh"]+"\n");
+      }
+    }else
+      return Container();
+
+  }
+
+  retun_ashrahdua(Timing_Data data) {
+
+
+    var key="Rehamat Ashra";
+
+
+    if(lang_opt=="Guj"){
+
+      return CardUI(title:dua_small_guj[key][0],content:dua_small[key]+"\n\n"+dua_small_guj[key][1]);
+    }   else{
+
+      return CardUI(title:key,content:dua_small[key]+"\n\n"+dua_small_hindi[key]+"\n");
+    }
 
   }
 }

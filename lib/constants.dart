@@ -7,9 +7,8 @@ const kTextColor = Color(0xFF3C4046);
 const kBackgroundColor = Color(0xFFF9F8FD);
 
 const double kDefaultPadding = 20.0;
-//1 - Gujrati
-//0 - Hindi / English
-const lang_opt="Hin";
+
+const lang_opt="Guj";
 
 const duroodAll =<String, String>{
   'Durood e Shafa':'اَللّٰھُمَّ صَلِّ وَ سَلِّمْ وَ بَارِکْ عَلٰی حَبِیْبِکَ شَفِیْعِ الْمُذْنِبِیْنَ وَ عَلٰٓی اٰلِہٖ وَ اَصْحَابِہٖ اَجْمَعِیْنَ',
@@ -46,7 +45,7 @@ const duroodAll =<String, String>{
 };
 
 
-const dua_key=['Saheri','Iftaar','Ramadaan Dua','Taraweeh'];
+const dua_key=['Saheri','Iftaar','Taraweeh'];
 const ashra_key=['Rehamat Ashra','Maghfirat Ashra','Jahannam Najaat'];
 
 
@@ -335,7 +334,7 @@ const dua_small_hindi=<String,String>{
   'Moon Sigth':'Allahumma ahlilhu `alainā bil-yumni wal-iman, was-salamati wal-Islam, rabbi wa rabbuk Allah',
   'Saheri':'Wa bisawmi ghadinn nawaiytu min shahri Ramadan',
   'Iftaar':'Allahumma inni laka sumtu wa ala rizq-ika-aftartu',
-  'Taraweeh':'',
+  'Taraweeh':'Taraweeh in hindi',
   'Rehamat Ashra':'Ya Hayyu Ya Qayyum bi rehmatika astaghees',
   'Maghfirat Ashra' : 'Astagfirullaha rab-bi min kulli zambiyon wa-atoobuilaiyh',
   'Jahannam Najaat':'Allahumma Ajirni minan naar',

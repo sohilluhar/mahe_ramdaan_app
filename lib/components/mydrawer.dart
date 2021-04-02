@@ -14,17 +14,8 @@ class SideDrawer extends StatelessWidget {
         child: Drawer(
           child: ListView(
             children: [
-//              UserAccountsDrawerHeader(
-//                accountEmail: Text('test@gmail.com'),
-//                accountName: Text('Julian Currie'),
-////                otherAccountsPictures: [Icon(Icons.home), Icon(Icons.ac_unit)],
-//                currentAccountPicture: CircleAvatar(
-//                  backgroundImage: NetworkImage(
-//                      'https://i7.pngguru.com/preview/633/903/703/hey-you-pikachu-pokemon-go-ash-ketchum-pikachu.jpg'),
-//                ),
-//              ),
+
               DrawerHeader(
-//                child: Text('Drawer Header'),
                 decoration: BoxDecoration(
                     color: Colors.blue,
                     image: DecorationImage(
@@ -44,11 +35,8 @@ class SideDrawer extends StatelessWidget {
                 title: Text('Mahe Ramadaan Timing'),
                 leading: Icon(Icons.access_time),
                 onTap: () =>  Navigator.of(context).push(NewPage(1)),
-              ),ListTile(
-                title: Text('Namaz Timing'),
-                leading: Icon(Icons.alarm),
-                onTap: () =>  Navigator.of(context).push(NewPage(1)),
-              ),ListTile(
+              ),
+              ListTile(
                 title: Text('Settings'),
                 leading: Icon(Icons.settings),
                 onTap: () =>  Navigator.of(context).push(NewPage(1)),
@@ -89,6 +77,12 @@ class SideDrawer extends StatelessWidget {
                 title: Text('About Us'),
                 leading: Icon(Icons.info_outline),
                 onTap: () async =>{},
+              ),ListTile(
+                title: Text('Contact Us'),
+                leading: Icon(Icons.mail),
+                onTap: () async =>{
+                  await launch('mailto:maheramdaanapp@gmail.com')
+                },
               ),
 
               ListTile(
