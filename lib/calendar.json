@@ -1,0 +1,2496 @@
+{
+  "code":200,
+  "status":"OK",
+  "data":[
+    {
+      "timings":{
+        "Fajr":"05:28 (IST)",
+        "Sunrise":"06:44 (IST)",
+        "Dhuhr":"12:55 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:07 (IST)",
+        "Maghrib":"19:07 (IST)",
+        "Isha":"20:23 (IST)",
+        "Imsak":"05:18 (IST)",
+        "Midnight":"00:55 (IST)"
+      },
+      "date":{
+        "readable":"01 Apr 2021",
+        "timestamp":"1617247861",
+        "gregorian":{
+          "date":"01-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"01",
+          "weekday":{
+            "en":"Thursday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"18-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"18",
+          "weekday":{
+            "en":"Al Khamees",
+            "ar":"\u0627\u0644\u062e\u0645\u064a\u0633"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:27 (IST)",
+        "Sunrise":"06:43 (IST)",
+        "Dhuhr":"12:55 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:07 (IST)",
+        "Maghrib":"19:07 (IST)",
+        "Isha":"20:23 (IST)",
+        "Imsak":"05:17 (IST)",
+        "Midnight":"00:55 (IST)"
+      },
+      "date":{
+        "readable":"02 Apr 2021",
+        "timestamp":"1617334261",
+        "gregorian":{
+          "date":"02-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"02",
+          "weekday":{
+            "en":"Friday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"19-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"19",
+          "weekday":{
+            "en":"Al Juma'a",
+            "ar":"\u0627\u0644\u062c\u0645\u0639\u0629"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:26 (IST)",
+        "Sunrise":"06:42 (IST)",
+        "Dhuhr":"12:55 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:08 (IST)",
+        "Maghrib":"19:08 (IST)",
+        "Isha":"20:24 (IST)",
+        "Imsak":"05:16 (IST)",
+        "Midnight":"00:55 (IST)"
+      },
+      "date":{
+        "readable":"03 Apr 2021",
+        "timestamp":"1617420661",
+        "gregorian":{
+          "date":"03-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"03",
+          "weekday":{
+            "en":"Saturday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"20-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"20",
+          "weekday":{
+            "en":"Al Sabt",
+            "ar":"\u0627\u0644\u0633\u0628\u062a"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:25 (IST)",
+        "Sunrise":"06:41 (IST)",
+        "Dhuhr":"12:54 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:08 (IST)",
+        "Maghrib":"19:08 (IST)",
+        "Isha":"20:24 (IST)",
+        "Imsak":"05:15 (IST)",
+        "Midnight":"00:55 (IST)"
+      },
+      "date":{
+        "readable":"04 Apr 2021",
+        "timestamp":"1617507061",
+        "gregorian":{
+          "date":"04-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"04",
+          "weekday":{
+            "en":"Sunday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"21-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"21",
+          "weekday":{
+            "en":"Al Ahad",
+            "ar":"\u0627\u0644\u0627\u062d\u062f"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:24 (IST)",
+        "Sunrise":"06:40 (IST)",
+        "Dhuhr":"12:54 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:09 (IST)",
+        "Maghrib":"19:09 (IST)",
+        "Isha":"20:25 (IST)",
+        "Imsak":"05:14 (IST)",
+        "Midnight":"00:54 (IST)"
+      },
+      "date":{
+        "readable":"05 Apr 2021",
+        "timestamp":"1617593461",
+        "gregorian":{
+          "date":"05-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"05",
+          "weekday":{
+            "en":"Monday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"22-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"22",
+          "weekday":{
+            "en":"Al Athnayn",
+            "ar":"\u0627\u0644\u0627\u062b\u0646\u064a\u0646"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:23 (IST)",
+        "Sunrise":"06:39 (IST)",
+        "Dhuhr":"12:54 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:09 (IST)",
+        "Maghrib":"19:09 (IST)",
+        "Isha":"20:25 (IST)",
+        "Imsak":"05:13 (IST)",
+        "Midnight":"00:54 (IST)"
+      },
+      "date":{
+        "readable":"06 Apr 2021",
+        "timestamp":"1617679861",
+        "gregorian":{
+          "date":"06-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"06",
+          "weekday":{
+            "en":"Tuesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"23-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"23",
+          "weekday":{
+            "en":"Al Thalaata",
+            "ar":"\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:22 (IST)",
+        "Sunrise":"06:38 (IST)",
+        "Dhuhr":"12:54 (IST)",
+        "Asr":"17:22 (IST)",
+        "Sunset":"19:09 (IST)",
+        "Maghrib":"19:09 (IST)",
+        "Isha":"20:26 (IST)",
+        "Imsak":"05:12 (IST)",
+        "Midnight":"00:54 (IST)"
+      },
+      "date":{
+        "readable":"07 Apr 2021",
+        "timestamp":"1617766261",
+        "gregorian":{
+          "date":"07-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"07",
+          "weekday":{
+            "en":"Wednesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"24-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"24",
+          "weekday":{
+            "en":"Al Arba'a",
+            "ar":"\u0627\u0644\u0627\u0631\u0628\u0639\u0627\u0621"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:21 (IST)",
+        "Sunrise":"06:37 (IST)",
+        "Dhuhr":"12:53 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:10 (IST)",
+        "Maghrib":"19:10 (IST)",
+        "Isha":"20:26 (IST)",
+        "Imsak":"05:11 (IST)",
+        "Midnight":"00:53 (IST)"
+      },
+      "date":{
+        "readable":"08 Apr 2021",
+        "timestamp":"1617852661",
+        "gregorian":{
+          "date":"08-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"08",
+          "weekday":{
+            "en":"Thursday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"25-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"25",
+          "weekday":{
+            "en":"Al Khamees",
+            "ar":"\u0627\u0644\u062e\u0645\u064a\u0633"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:20 (IST)",
+        "Sunrise":"06:36 (IST)",
+        "Dhuhr":"12:53 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:10 (IST)",
+        "Maghrib":"19:10 (IST)",
+        "Isha":"20:27 (IST)",
+        "Imsak":"05:10 (IST)",
+        "Midnight":"00:53 (IST)"
+      },
+      "date":{
+        "readable":"09 Apr 2021",
+        "timestamp":"1617939061",
+        "gregorian":{
+          "date":"09-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"09",
+          "weekday":{
+            "en":"Friday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"26-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"26",
+          "weekday":{
+            "en":"Al Juma'a",
+            "ar":"\u0627\u0644\u062c\u0645\u0639\u0629"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:19 (IST)",
+        "Sunrise":"06:35 (IST)",
+        "Dhuhr":"12:53 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:10 (IST)",
+        "Maghrib":"19:10 (IST)",
+        "Isha":"20:27 (IST)",
+        "Imsak":"05:09 (IST)",
+        "Midnight":"00:53 (IST)"
+      },
+      "date":{
+        "readable":"10 Apr 2021",
+        "timestamp":"1618025461",
+        "gregorian":{
+          "date":"10-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"10",
+          "weekday":{
+            "en":"Saturday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"27-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"27",
+          "weekday":{
+            "en":"Al Sabt",
+            "ar":"\u0627\u0644\u0633\u0628\u062a"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:17 (IST)",
+        "Sunrise":"06:34 (IST)",
+        "Dhuhr":"12:52 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:11 (IST)",
+        "Maghrib":"19:11 (IST)",
+        "Isha":"20:28 (IST)",
+        "Imsak":"05:07 (IST)",
+        "Midnight":"00:53 (IST)"
+      },
+      "date":{
+        "readable":"11 Apr 2021",
+        "timestamp":"1618111861",
+        "gregorian":{
+          "date":"11-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"11",
+          "weekday":{
+            "en":"Sunday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"28-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"28",
+          "weekday":{
+            "en":"Al Ahad",
+            "ar":"\u0627\u0644\u0627\u062d\u062f"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:16 (IST)",
+        "Sunrise":"06:33 (IST)",
+        "Dhuhr":"12:52 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:11 (IST)",
+        "Maghrib":"19:11 (IST)",
+        "Isha":"20:28 (IST)",
+        "Imsak":"05:06 (IST)",
+        "Midnight":"00:52 (IST)"
+      },
+      "date":{
+        "readable":"12 Apr 2021",
+        "timestamp":"1618198261",
+        "gregorian":{
+          "date":"12-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"12",
+          "weekday":{
+            "en":"Monday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"29-08-1442",
+          "format":"DD-MM-YYYY",
+          "day":"29",
+          "weekday":{
+            "en":"Al Athnayn",
+            "ar":"\u0627\u0644\u0627\u062b\u0646\u064a\u0646"
+          },
+          "month":{
+            "number":8,
+            "en":"Sha\u02bfb\u0101n",
+            "ar":"\u0634\u064e\u0639\u0652\u0628\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:15 (IST)",
+        "Sunrise":"06:33 (IST)",
+        "Dhuhr":"12:52 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:12 (IST)",
+        "Maghrib":"19:12 (IST)",
+        "Isha":"20:29 (IST)",
+        "Imsak":"05:05 (IST)",
+        "Midnight":"00:52 (IST)"
+      },
+      "date":{
+        "readable":"13 Apr 2021",
+        "timestamp":"1618284661",
+        "gregorian":{
+          "date":"13-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"13",
+          "weekday":{
+            "en":"Tuesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"01-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"01",
+          "weekday":{
+            "en":"Al Thalaata",
+            "ar":"\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+            "1st Day of Ramadan"
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:14 (IST)",
+        "Sunrise":"06:32 (IST)",
+        "Dhuhr":"12:52 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:12 (IST)",
+        "Maghrib":"19:12 (IST)",
+        "Isha":"20:29 (IST)",
+        "Imsak":"05:04 (IST)",
+        "Midnight":"00:52 (IST)"
+      },
+      "date":{
+        "readable":"14 Apr 2021",
+        "timestamp":"1618371061",
+        "gregorian":{
+          "date":"14-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"14",
+          "weekday":{
+            "en":"Wednesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"02-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"02",
+          "weekday":{
+            "en":"Al Arba'a",
+            "ar":"\u0627\u0644\u0627\u0631\u0628\u0639\u0627\u0621"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:13 (IST)",
+        "Sunrise":"06:31 (IST)",
+        "Dhuhr":"12:51 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:12 (IST)",
+        "Maghrib":"19:12 (IST)",
+        "Isha":"20:30 (IST)",
+        "Imsak":"05:03 (IST)",
+        "Midnight":"00:52 (IST)"
+      },
+      "date":{
+        "readable":"15 Apr 2021",
+        "timestamp":"1618457461",
+        "gregorian":{
+          "date":"15-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"15",
+          "weekday":{
+            "en":"Thursday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"03-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"03",
+          "weekday":{
+            "en":"Al Khamees",
+            "ar":"\u0627\u0644\u062e\u0645\u064a\u0633"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:12 (IST)",
+        "Sunrise":"06:30 (IST)",
+        "Dhuhr":"12:51 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:13 (IST)",
+        "Maghrib":"19:13 (IST)",
+        "Isha":"20:31 (IST)",
+        "Imsak":"05:02 (IST)",
+        "Midnight":"00:51 (IST)"
+      },
+      "date":{
+        "readable":"16 Apr 2021",
+        "timestamp":"1618543861",
+        "gregorian":{
+          "date":"16-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"16",
+          "weekday":{
+            "en":"Friday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"04-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"04",
+          "weekday":{
+            "en":"Al Juma'a",
+            "ar":"\u0627\u0644\u062c\u0645\u0639\u0629"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:11 (IST)",
+        "Sunrise":"06:29 (IST)",
+        "Dhuhr":"12:51 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:13 (IST)",
+        "Maghrib":"19:13 (IST)",
+        "Isha":"20:31 (IST)",
+        "Imsak":"05:01 (IST)",
+        "Midnight":"00:51 (IST)"
+      },
+      "date":{
+        "readable":"17 Apr 2021",
+        "timestamp":"1618630261",
+        "gregorian":{
+          "date":"17-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"17",
+          "weekday":{
+            "en":"Saturday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"05-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"05",
+          "weekday":{
+            "en":"Al Sabt",
+            "ar":"\u0627\u0644\u0633\u0628\u062a"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:10 (IST)",
+        "Sunrise":"06:28 (IST)",
+        "Dhuhr":"12:51 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:14 (IST)",
+        "Maghrib":"19:14 (IST)",
+        "Isha":"20:32 (IST)",
+        "Imsak":"05:00 (IST)",
+        "Midnight":"00:51 (IST)"
+      },
+      "date":{
+        "readable":"18 Apr 2021",
+        "timestamp":"1618716661",
+        "gregorian":{
+          "date":"18-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"18",
+          "weekday":{
+            "en":"Sunday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"06-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"06",
+          "weekday":{
+            "en":"Al Ahad",
+            "ar":"\u0627\u0644\u0627\u062d\u062f"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:09 (IST)",
+        "Sunrise":"06:27 (IST)",
+        "Dhuhr":"12:51 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:14 (IST)",
+        "Maghrib":"19:14 (IST)",
+        "Isha":"20:32 (IST)",
+        "Imsak":"04:59 (IST)",
+        "Midnight":"00:51 (IST)"
+      },
+      "date":{
+        "readable":"19 Apr 2021",
+        "timestamp":"1618803061",
+        "gregorian":{
+          "date":"19-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"19",
+          "weekday":{
+            "en":"Monday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"07-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"07",
+          "weekday":{
+            "en":"Al Athnayn",
+            "ar":"\u0627\u0644\u0627\u062b\u0646\u064a\u0646"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:08 (IST)",
+        "Sunrise":"06:27 (IST)",
+        "Dhuhr":"12:50 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:14 (IST)",
+        "Maghrib":"19:14 (IST)",
+        "Isha":"20:33 (IST)",
+        "Imsak":"04:58 (IST)",
+        "Midnight":"00:50 (IST)"
+      },
+      "date":{
+        "readable":"20 Apr 2021",
+        "timestamp":"1618889461",
+        "gregorian":{
+          "date":"20-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"20",
+          "weekday":{
+            "en":"Tuesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"08-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"08",
+          "weekday":{
+            "en":"Al Thalaata",
+            "ar":"\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:07 (IST)",
+        "Sunrise":"06:26 (IST)",
+        "Dhuhr":"12:50 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:15 (IST)",
+        "Maghrib":"19:15 (IST)",
+        "Isha":"20:33 (IST)",
+        "Imsak":"04:57 (IST)",
+        "Midnight":"00:50 (IST)"
+      },
+      "date":{
+        "readable":"21 Apr 2021",
+        "timestamp":"1618975861",
+        "gregorian":{
+          "date":"21-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"21",
+          "weekday":{
+            "en":"Wednesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"09-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"09",
+          "weekday":{
+            "en":"Al Arba'a",
+            "ar":"\u0627\u0644\u0627\u0631\u0628\u0639\u0627\u0621"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:06 (IST)",
+        "Sunrise":"06:25 (IST)",
+        "Dhuhr":"12:50 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:15 (IST)",
+        "Maghrib":"19:15 (IST)",
+        "Isha":"20:34 (IST)",
+        "Imsak":"04:56 (IST)",
+        "Midnight":"00:50 (IST)"
+      },
+      "date":{
+        "readable":"22 Apr 2021",
+        "timestamp":"1619062261",
+        "gregorian":{
+          "date":"22-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"22",
+          "weekday":{
+            "en":"Thursday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"10-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"10",
+          "weekday":{
+            "en":"Al Khamees",
+            "ar":"\u0627\u0644\u062e\u0645\u064a\u0633"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:05 (IST)",
+        "Sunrise":"06:24 (IST)",
+        "Dhuhr":"12:50 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:16 (IST)",
+        "Maghrib":"19:16 (IST)",
+        "Isha":"20:35 (IST)",
+        "Imsak":"04:55 (IST)",
+        "Midnight":"00:50 (IST)"
+      },
+      "date":{
+        "readable":"23 Apr 2021",
+        "timestamp":"1619148661",
+        "gregorian":{
+          "date":"23-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"23",
+          "weekday":{
+            "en":"Friday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"11-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"11",
+          "weekday":{
+            "en":"Al Juma'a",
+            "ar":"\u0627\u0644\u062c\u0645\u0639\u0629"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:04 (IST)",
+        "Sunrise":"06:23 (IST)",
+        "Dhuhr":"12:50 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:16 (IST)",
+        "Maghrib":"19:16 (IST)",
+        "Isha":"20:35 (IST)",
+        "Imsak":"04:54 (IST)",
+        "Midnight":"00:50 (IST)"
+      },
+      "date":{
+        "readable":"24 Apr 2021",
+        "timestamp":"1619235061",
+        "gregorian":{
+          "date":"24-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"24",
+          "weekday":{
+            "en":"Saturday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"12-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"12",
+          "weekday":{
+            "en":"Al Sabt",
+            "ar":"\u0627\u0644\u0633\u0628\u062a"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:03 (IST)",
+        "Sunrise":"06:22 (IST)",
+        "Dhuhr":"12:49 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:17 (IST)",
+        "Maghrib":"19:17 (IST)",
+        "Isha":"20:36 (IST)",
+        "Imsak":"04:53 (IST)",
+        "Midnight":"00:50 (IST)"
+      },
+      "date":{
+        "readable":"25 Apr 2021",
+        "timestamp":"1619321461",
+        "gregorian":{
+          "date":"25-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"25",
+          "weekday":{
+            "en":"Sunday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"13-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"13",
+          "weekday":{
+            "en":"Al Ahad",
+            "ar":"\u0627\u0644\u0627\u062d\u062f"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:02 (IST)",
+        "Sunrise":"06:22 (IST)",
+        "Dhuhr":"12:49 (IST)",
+        "Asr":"17:23 (IST)",
+        "Sunset":"19:17 (IST)",
+        "Maghrib":"19:17 (IST)",
+        "Isha":"20:36 (IST)",
+        "Imsak":"04:52 (IST)",
+        "Midnight":"00:49 (IST)"
+      },
+      "date":{
+        "readable":"26 Apr 2021",
+        "timestamp":"1619407861",
+        "gregorian":{
+          "date":"26-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"26",
+          "weekday":{
+            "en":"Monday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"14-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"14",
+          "weekday":{
+            "en":"Al Athnayn",
+            "ar":"\u0627\u0644\u0627\u062b\u0646\u064a\u0646"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:02 (IST)",
+        "Sunrise":"06:21 (IST)",
+        "Dhuhr":"12:49 (IST)",
+        "Asr":"17:24 (IST)",
+        "Sunset":"19:17 (IST)",
+        "Maghrib":"19:17 (IST)",
+        "Isha":"20:37 (IST)",
+        "Imsak":"04:52 (IST)",
+        "Midnight":"00:49 (IST)"
+      },
+      "date":{
+        "readable":"27 Apr 2021",
+        "timestamp":"1619494261",
+        "gregorian":{
+          "date":"27-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"27",
+          "weekday":{
+            "en":"Tuesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"15-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"15",
+          "weekday":{
+            "en":"Al Thalaata",
+            "ar":"\u0627\u0644\u062b\u0644\u0627\u062b\u0627\u0621"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:01 (IST)",
+        "Sunrise":"06:20 (IST)",
+        "Dhuhr":"12:49 (IST)",
+        "Asr":"17:24 (IST)",
+        "Sunset":"19:18 (IST)",
+        "Maghrib":"19:18 (IST)",
+        "Isha":"20:38 (IST)",
+        "Imsak":"04:51 (IST)",
+        "Midnight":"00:49 (IST)"
+      },
+      "date":{
+        "readable":"28 Apr 2021",
+        "timestamp":"1619580661",
+        "gregorian":{
+          "date":"28-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"28",
+          "weekday":{
+            "en":"Wednesday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"16-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"16",
+          "weekday":{
+            "en":"Al Arba'a",
+            "ar":"\u0627\u0644\u0627\u0631\u0628\u0639\u0627\u0621"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"05:00 (IST)",
+        "Sunrise":"06:20 (IST)",
+        "Dhuhr":"12:49 (IST)",
+        "Asr":"17:24 (IST)",
+        "Sunset":"19:18 (IST)",
+        "Maghrib":"19:18 (IST)",
+        "Isha":"20:38 (IST)",
+        "Imsak":"04:50 (IST)",
+        "Midnight":"00:49 (IST)"
+      },
+      "date":{
+        "readable":"29 Apr 2021",
+        "timestamp":"1619667061",
+        "gregorian":{
+          "date":"29-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"29",
+          "weekday":{
+            "en":"Thursday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"17-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"17",
+          "weekday":{
+            "en":"Al Khamees",
+            "ar":"\u0627\u0644\u062e\u0645\u064a\u0633"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    },
+    {
+      "timings":{
+        "Fajr":"04:59 (IST)",
+        "Sunrise":"06:19 (IST)",
+        "Dhuhr":"12:49 (IST)",
+        "Asr":"17:24 (IST)",
+        "Sunset":"19:19 (IST)",
+        "Maghrib":"19:19 (IST)",
+        "Isha":"20:39 (IST)",
+        "Imsak":"04:49 (IST)",
+        "Midnight":"00:49 (IST)"
+      },
+      "date":{
+        "readable":"30 Apr 2021",
+        "timestamp":"1619753461",
+        "gregorian":{
+          "date":"30-04-2021",
+          "format":"DD-MM-YYYY",
+          "day":"30",
+          "weekday":{
+            "en":"Friday"
+          },
+          "month":{
+            "number":4,
+            "en":"April"
+          },
+          "year":"2021",
+          "designation":{
+            "abbreviated":"AD",
+            "expanded":"Anno Domini"
+          }
+        },
+        "hijri":{
+          "date":"18-09-1442",
+          "format":"DD-MM-YYYY",
+          "day":"18",
+          "weekday":{
+            "en":"Al Juma'a",
+            "ar":"\u0627\u0644\u062c\u0645\u0639\u0629"
+          },
+          "month":{
+            "number":9,
+            "en":"Rama\u1e0d\u0101n",
+            "ar":"\u0631\u064e\u0645\u064e\u0636\u0627\u0646"
+          },
+          "year":"1442",
+          "designation":{
+            "abbreviated":"AH",
+            "expanded":"Anno Hegirae"
+          },
+          "holidays":[
+
+          ]
+        }
+      },
+      "meta":{
+        "latitude":23.2568665,
+        "longitude":69.652099,
+        "timezone":"Asia\/Kolkata",
+        "method":{
+          "id":1,
+          "name":"University of Islamic Sciences, Karachi",
+          "params":{
+            "Fajr":18,
+            "Isha":18
+          }
+        },
+        "latitudeAdjustmentMethod":"ANGLE_BASED",
+        "midnightMode":"STANDARD",
+        "school":"HANAFI",
+        "offset":{
+          "Imsak":0,
+          "Fajr":0,
+          "Sunrise":0,
+          "Dhuhr":0,
+          "Asr":0,
+          "Maghrib":0,
+          "Sunset":0,
+          "Isha":0,
+          "Midnight":0
+        }
+      }
+    }
+  ]
+}

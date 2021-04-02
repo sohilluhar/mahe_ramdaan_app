@@ -7,6 +7,9 @@ import 'package:hijri/hijri_calendar.dart';
 import 'package:intl/intl.dart';
 import 'package:mahe_ramdaan_app/Model/Timing_data.dart';
 import 'package:mahe_ramdaan_app/constants.dart';
+import 'All_Doorud.dart';
+import 'All_Dua_Guj.dart';
+import 'All_Dua_Hin.dart';
 import 'Special_dua_Gujarati.dart';
 import 'Special_dua_Hindi.dart';
 import 'api_response.dart';
@@ -38,6 +41,17 @@ class _HomeState extends State<Home> {
 
 
   @override
+  void didUpdateWidget(Home oldWidget) {
+    timing_data=makeGetRequest();
+  }
+
+  @override
+  void setState(VoidCallback fn) {
+    print("inside set");
+    timing_data=makeGetRequest();
+  }
+
+  @override
   Widget build(BuildContext context) {
     // It will provie us total height  and width of our screen
     Size size = MediaQuery.of(context).size;
@@ -67,11 +81,19 @@ FutureBuilder<Timing_Data>(
   future:timing_data,
   builder:(context,snapshot){
     if(snapshot.hasData){
+
+
      return Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
 
           SizedBox(height: 8),
+
+
+
+
+
+
 
           Container(
               decoration: BoxDecoration(
@@ -89,15 +111,15 @@ FutureBuilder<Timing_Data>(
 //            color: kPrimaryColor.withOpacity(0.2),
               width: size.width*0.9,
               child: Column(children: [
-//              Text(cTime,textAlign: TextAlign.justify,
-//              style: TextStyle(fontSize: 24,color: Colors.black,fontWeight: FontWeight.bold)),
-//             SizedBox(height: 8,),
+
+
                 Text(cDate,textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 18,color: Colors.black,),
                 ), SizedBox(height: 8,),
                 Text(snapshot.data.hizri_date,textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 18,color: Colors.black,),
                 ), SizedBox(height: 8,),
+
                 Text("Saheri: "+snapshot.data.saheri,textAlign: TextAlign.justify,
                   style: TextStyle(fontSize: 18,color: Colors.black,))
                 ,Text("Iftar: "+snapshot.data.iftar,textAlign: TextAlign.justify,
@@ -107,12 +129,18 @@ FutureBuilder<Timing_Data>(
           ),
 
 
-          TitleWithMoreBtn(title: "Dua", press: () {}),
-          SizedBox(height: 8),
 
+
+
+          TitleWithMoreBtn(title: "Dua", press: () {
+            if(lang_opt!='Guj')
+              Navigator.of(context).push(All_Dua_Hin());
+            else
+              Navigator.of(context).push(All_Dua_Guj());
+          }),
+          SizedBox(height: 8),
           return_dua(snapshot.data),
           return_taraweeh_dua(snapshot.data),
-
           Card(
               color: kPrimaryColor,
               margin: EdgeInsets.only(left:sizeWi*0.05,right:sizeWi*0.05 ),
@@ -158,15 +186,22 @@ FutureBuilder<Timing_Data>(
                   ))
           ),
           SizedBox(height:24),
-          TitleWithMoreBtn(title: "Ashrah dua", press: () {}),
+          TitleWithMoreBtn(title: "Ashrah dua", press: () {
+            if(lang_opt!='Guj')
+              Navigator.of(context).push(All_Dua_Hin());
+            else
+              Navigator.of(context).push(All_Dua_Guj());
+          }),
           SizedBox(height: 8),
-
           retun_ashrahdua(snapshot.data),
 
 
-//          CardUI(title:"Rehamat Ashra",content:"يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغيثُ"),
+
 
           TitleWithMoreBtn(title: "Durood Sharif", press: () {
+
+            Navigator.of(context).push(All_Doorud());
+
 
           }),
           SizedBox(height: 8),
@@ -176,17 +211,21 @@ FutureBuilder<Timing_Data>(
           SizedBox(height: 8),
           CardUI(title:cDate,content:
           "Fajr: "+snapshot.data.fajar+"\n"+
-          "Zohar: "+snapshot.data.zohar+"\n"+
-          "Asr: "+snapshot.data.asr+"\n"+
-          "Maghrib: "+snapshot.data.maghrib+"\n"+
-          "Isha: "+snapshot.data.isha+"\n"
-
+              "Zohar: "+snapshot.data.zohar+"\n"+
+              "Asr: "+snapshot.data.asr+"\n"+
+              "Maghrib: "+snapshot.data.maghrib+"\n"+
+              "Isha: "+snapshot.data.isha+"\n"
           ),
+
 
 
 
         ],
       );
+
+
+
+
     }else{
 
       return

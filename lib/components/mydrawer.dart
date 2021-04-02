@@ -3,6 +3,7 @@ import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../NewPage.dart';
+import '../Settings.dart';
 
 class SideDrawer extends StatelessWidget {
   const SideDrawer({Key key}) : super(key: key);
@@ -39,7 +40,10 @@ class SideDrawer extends StatelessWidget {
               ListTile(
                 title: Text('Settings'),
                 leading: Icon(Icons.settings),
-                onTap: () =>  Navigator.of(context).push(NewPage(1)),
+                onTap: () =>  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Settings()),
+                ).then((value) =>{}),
               ),
               Divider(),
               ListTile(

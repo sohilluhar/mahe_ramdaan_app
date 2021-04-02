@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'components/card_ui.dart';
 import 'constants.dart';
 
-class Mahe_ramadaan_special_dua_guj extends MaterialPageRoute<void> {
-  Mahe_ramadaan_special_dua_guj()
+class All_Dua_Guj extends MaterialPageRoute<void> {
+  All_Dua_Guj()
       : super(builder: (BuildContext context) {
 
     Size size = MediaQuery.of(context).size;
@@ -21,10 +21,9 @@ class Mahe_ramadaan_special_dua_guj extends MaterialPageRoute<void> {
             children: <Widget>[
 
               SizedBox(width: size.width,height: 16,),
-              CardUI_Long(title:"રમઝાન દુઆ ૧", content:mahe_ramadaan_special_dua_guj["રમઝાન દુઆ ૧"]),
-              SizedBox(width: size.width,height: 16,),
+              for(var key in dua_small_guj.keys)
+                CardUI_Long(title:dua_small_guj[key][0], content:dua_small[key]+"\n\n"+dua_small_guj[key][1])
 
-              CardUI_Long(title:"રમઝાન દુઆ ૨", content:mahe_ramadaan_special_dua_guj["રમઝાન દુઆ ૨"])
             ],
           ),
         ),

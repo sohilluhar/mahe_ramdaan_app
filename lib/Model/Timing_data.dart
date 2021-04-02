@@ -15,6 +15,7 @@ class Timing_Data{
 
 
   factory Timing_Data.fromJSON(Map<dynamic, dynamic> jsonData){
+    print(jsonData);
 print("inside json");
     var saheritmp=jsonData["timings"]["Imsak"].toString().replaceAll("(IST)", "");
     var saheri=DateFormat.jm().format(DateTime.parse("20210101 "+saheritmp.trim()+":00"));

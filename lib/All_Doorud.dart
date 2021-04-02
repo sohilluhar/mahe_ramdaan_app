@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 import 'components/card_ui.dart';
 import 'constants.dart';
 
-class Mahe_ramadaan_special_dua_guj extends MaterialPageRoute<void> {
-  Mahe_ramadaan_special_dua_guj()
+class All_Doorud extends MaterialPageRoute<void> {
+  All_Doorud()
       : super(builder: (BuildContext context) {
 
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title:Text('રમઝાન દુઆ'),
+        title:Text('Durood Sharif'),
         elevation: 1.0,
       ),
       body: Center(
@@ -21,10 +21,9 @@ class Mahe_ramadaan_special_dua_guj extends MaterialPageRoute<void> {
             children: <Widget>[
 
               SizedBox(width: size.width,height: 16,),
-              CardUI_Long(title:"રમઝાન દુઆ ૧", content:mahe_ramadaan_special_dua_guj["રમઝાન દુઆ ૧"]),
-              SizedBox(width: size.width,height: 16,),
+              for(var key in duroodAll.keys)
+                CardUI_Long(title:key, content:duroodAll[key])
 
-              CardUI_Long(title:"રમઝાન દુઆ ૨", content:mahe_ramadaan_special_dua_guj["રમઝાન દુઆ ૨"])
             ],
           ),
         ),
