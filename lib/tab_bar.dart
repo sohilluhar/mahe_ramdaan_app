@@ -6,6 +6,7 @@ import 'package:share/share.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'NewPage.dart';
 import 'Settings.dart';
+import 'Surah.dart';
 import 'components/mydrawer.dart';
 import 'constants.dart';
 import 'counterpg.dart';
@@ -38,7 +39,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   TabStyle _tabStyle = TabStyle.react;
-  String pathPDF = "";
+  String pathPDF = "lib/assets/pdf/demo-link.pdf";
 
 
 //  Future<File> createFileOfPdfUrl() async {
@@ -192,7 +193,7 @@ class _HomePageState extends State<HomePage> {
 //              });
 //            });
       Navigator.push(context,
-        MaterialPageRoute(builder: (context) => PDFScreen(path: pathPDF,)),);
+        MaterialPageRoute(builder: (context) => PDFScreen(path: pathPDF,title: "Mahe Ramadaan Kese Guzare")),);
 
           }),
     Divider(),
@@ -267,7 +268,7 @@ class _HomePageState extends State<HomePage> {
                   Home(),
                   Durood(),
                   CounterPg(title:"test"),
-                  Guj_test(),
+                  Surah(),
                   ],
               ),
             ),

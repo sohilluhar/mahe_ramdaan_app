@@ -145,7 +145,6 @@ FutureBuilder<Timing_Data>(
               color: kPrimaryColor,
               margin: EdgeInsets.only(left:sizeWi*0.05,right:sizeWi*0.05 ),
               child: InkWell(
-
                   splashColor: kPrimaryColor.withOpacity(0.1),
                   onTap: () {
                     if(lang_opt!='Guj')
@@ -160,7 +159,6 @@ FutureBuilder<Timing_Data>(
                       children: <Widget>[
 
                         Text(
-
                           "Mahe Ramadaan Special Dua",
                           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
                         ),

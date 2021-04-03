@@ -5,35 +5,36 @@ import 'package:native_pdf_view/native_pdf_view.dart';
 class PDFScreen extends StatefulWidget {
   final String path;
 
-  PDFScreen({Key key, this.path}) : super(key: key);
+  var title;
+
+  PDFScreen({Key key, this.path,this.title}) : super(key: key);
 
   _PDFScreenState createState() => _PDFScreenState();
 }
 
 
-class _PDFScreenState extends State<PDFScreen> with WidgetsBindingObserver {
+class _PDFScreenState extends State<PDFScreen>{
 
 
-  final pdfController = PdfController(
-    document: PdfDocument.openAsset('lib/assets/pdf/demo-link.pdf'),
-  );
 
-  Widget pdfView() => PdfView(
-    controller: pdfController,
-    scrollDirection: Axis.vertical,
-  );
 
 
   @override
   Widget build(BuildContext context) {
+
+    final pdfController = PdfController(
+      document: PdfDocument.openAsset(widget.path),
+    );
+
+    Widget pdfView() => PdfView(
+      controller: pdfController,
+      scrollDirection: Axis.vertical,
+    );
+
     return Scaffold(
       appBar: AppBar(
-        title: Text("Mahe Ramadaan kese guzare"),
-//        actions: <Widget>[
-//          IconButton(
-//            icon: Icon(Icons.share),
-//            onPressed: () {},
-//          ),
+        title: Text(widget.title),
+
 //        ],
       ),
       body: Stack(
