@@ -11,6 +11,7 @@ import 'components/mydrawer.dart';
 import 'constants.dart';
 import 'counterpg.dart';
 import 'durood.dart';
+import 'getGeoLocation.dart';
 import 'home.dart';
 import 'dart:async';
 import 'dart:io';
@@ -24,7 +25,7 @@ const _kPages = <String, IconData>{
   'Home': Icons.home,
   'Durood': Icons.book,
   'Tasbih': Icons.add_circle_outline,
-  'other': Icons.book,
+  'Surah': Icons.book,
 };
 
 
@@ -39,7 +40,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   TabStyle _tabStyle = TabStyle.react;
-  String pathPDF = "lib/assets/pdf/demo-link.pdf";
+  String pathPDF = "lib/assets/pdf/MaheRamzanKaiseGuzareHindi.pdf";
 
 
 //  Future<File> createFileOfPdfUrl() async {
@@ -200,7 +201,10 @@ class _HomePageState extends State<HomePage> {
     ListTile(
     title: Text('Special Thanks'),
     leading: Icon(Icons.people),
-    onTap: () async =>{},
+    onTap: () =>{
+//    Navigator.push(context,
+//    MaterialPageRoute(builder: (context) => GetUserLatLong()),)
+    },
     ),
 
     ListTile(

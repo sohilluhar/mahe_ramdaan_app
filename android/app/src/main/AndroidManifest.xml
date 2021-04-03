@@ -1,13 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.ramdaan.mahe_ramdaan_app">
     <application android:usesCleartextTraffic="true"/>
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:label="mahe_ramdaan_app"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/logo">
 
        <activity
             android:name=".MainActivity"

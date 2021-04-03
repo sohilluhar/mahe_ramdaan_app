@@ -213,7 +213,7 @@ class Surah extends StatelessWidget {
                       children: <Widget>[
 
                         Text(
-                          "Surah Qard",
+                          "Surah Qadr",
                           style: TextStyle(fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: Colors.white),
