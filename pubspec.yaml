@@ -34,6 +34,11 @@ dependencies:
   http: ^0.13.1
   url_launcher: ^6.0.3
   share: ^2.0.1
+#  flutter_pdfview: ^1.1.0
+  native_pdf_view: ^4.0.1
+  path_provider: ^2.0.1
+#  simple_permissions: ^0.1.9
+
 #  geolocation: ^1.1.2
 
 
@@ -56,6 +61,8 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - lib/assets/pdf/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
