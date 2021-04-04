@@ -37,6 +37,17 @@ dependencies:
 #  flutter_pdfview: ^1.1.0
   native_pdf_view: ^4.0.1
   path_provider: ^2.0.1
+  flutter_map:
+  mapbox_search_flutter:
+  latlong: ^0.6.1
+  location: ^2.3.5
+  geolocator: ^5.3.1
+  geocoder: ^0.2.1
+  
+
+
+
+
 #  simple_permissions: ^0.1.9
 
 #  geolocation: ^1.1.2

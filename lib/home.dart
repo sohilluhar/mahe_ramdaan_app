@@ -18,6 +18,7 @@ import 'components/title_with_more_bbtn.dart';
 
 
 class Home extends StatefulWidget {
+  Home();
 
   @override
   _HomeState createState() => _HomeState();
@@ -40,16 +41,16 @@ class _HomeState extends State<Home> {
   }
 
 
-  @override
-  void didUpdateWidget(Home oldWidget) {
-    timing_data=makeGetRequest();
-  }
-
-  @override
-  void setState(VoidCallback fn) {
-    print("inside set");
-    timing_data=makeGetRequest();
-  }
+//  @override
+//  void didUpdateWidget(Home oldWidget) {
+//    timing_data=makeGetRequest();
+//  }
+//
+//  @override
+//  void setState(VoidCallback fn) {
+//    print("inside set");
+//    timing_data=makeGetRequest();
+//  }
 
   @override
   Widget build(BuildContext context) {

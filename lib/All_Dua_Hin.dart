@@ -21,8 +21,8 @@ class All_Dua_Hin extends MaterialPageRoute<void> {
             children: <Widget>[
 
               SizedBox(width: size.width,height: 16,),
-              for(var key in duroodAll.keys)
-                CardUI_Long(title:key, content:duroodAll[key])
+              for(var key in dua_small.keys)
+                CardUI_Long(title:key, content:dua_small[key]+"\n\n"+dua_small_hindi[key])
 
             ],
           ),

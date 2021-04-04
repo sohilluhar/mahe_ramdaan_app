@@ -7,6 +7,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'NewPage.dart';
 import 'Settings.dart';
 import 'Surah.dart';
+import 'add_location.dart';
 import 'components/mydrawer.dart';
 import 'constants.dart';
 import 'counterpg.dart';
@@ -202,8 +203,8 @@ class _HomePageState extends State<HomePage> {
     title: Text('Special Thanks'),
     leading: Icon(Icons.people),
     onTap: () =>{
-//    Navigator.push(context,
-//    MaterialPageRoute(builder: (context) => GetUserLatLong()),)
+    Navigator.push(context,
+    MaterialPageRoute(builder: (context) => GetLocation()),)
     },
     ),
 
