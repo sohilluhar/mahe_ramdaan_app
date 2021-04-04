@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mahe_ramdaan_app/shared_pref.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import 'constants.dart';
 import 'tab_bar.dart';
 
 void main() {
@@ -26,6 +29,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    setDefualtSharedPref();
+
     return MaterialApp(
       title: 'Mahe Ramdaan App',
       theme: ThemeData(
@@ -35,6 +41,29 @@ class MyApp extends StatelessWidget {
       home: HomePage(title:"Home"),
 
     );
+  }
+
+  Future<void> setDefualtSharedPref() async {
+
+    SharedPreferences  pref =await SharedPreferences.getInstance();
+print("inside shred pref");
+
+    if (pref.containsKey("lang")){
+      print("getting lang_opt");
+      lang_opt=pref.getString("lang");
+    }else{
+      print("Setting lang_opt");
+      pref.setString("lang", "Hin");
+      lang_opt=pref.getString("lang");
+    }
+
+    if (pref.containsKey("date_correction")){
+      date_correction_value=pref.getString("date_correction");
+    }else{
+      pref.setString("date_correction", "0");
+      date_correction_value=pref.getString("date_correction");
+    }
+
   }
 }
 

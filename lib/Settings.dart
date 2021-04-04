@@ -1,6 +1,7 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:mahe_ramdaan_app/constants.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 class Settings extends StatefulWidget {
@@ -38,7 +39,9 @@ class _Settings extends State<Settings> {
     final dropdown = DropdownButton<String>(
       value: lang_opt,
       onChanged: (new_lang_opt) {
-        setState(() {
+        setState(()  {
+
+          savelang_opt(new_lang_opt);
           lang_opt=new_lang_opt;
         });
 
@@ -67,10 +70,12 @@ class _Settings extends State<Settings> {
   }
 
   Widget _buildDateCorrectionOption() {
-    final dropdown = DropdownButton<int>(
-      value: date_correction_value,
+    final dropdown = DropdownButton<String>(
+      value: date_correction_value.toString(),
       onChanged: (new_val) {
-        setState(() {
+        setState(()  {
+
+          saveDateCorrection(new_val);
           date_correction_value=new_val;
         });
 
@@ -78,27 +83,27 @@ class _Settings extends State<Settings> {
       items: [
 
         DropdownMenuItem(
-          value: -2,
+          value: "-2",
           child: Text("-2",textAlign: TextAlign.start,
               style: TextStyle(fontSize: 18,color: Colors.black,)),
         ),
         DropdownMenuItem(
-          value: -1,
+          value: "-1",
           child: Text("-1",textAlign: TextAlign.start,
               style: TextStyle(fontSize: 18,color: Colors.black,)),
         ),
         DropdownMenuItem(
-          value: 0,
+          value: "0",
           child: Text("0",textAlign: TextAlign.start,
               style: TextStyle(fontSize: 18,color: Colors.black,)),
         ),
         DropdownMenuItem(
-          value: 1,
+          value: "1",
           child: Text("+1",textAlign: TextAlign.start,
               style: TextStyle(fontSize: 18,color: Colors.black,)),
         ),
         DropdownMenuItem(
-          value: 2,
+          value: "2",
           child: Text("+2",textAlign: TextAlign.start,
               style: TextStyle(fontSize: 18,color: Colors.black,)),
         ),
@@ -112,6 +117,22 @@ class _Settings extends State<Settings> {
     style: TextStyle(fontSize: 18,color: Colors.black,)),
       trailing: dropdown,
     );
+  }
+
+  Future<void> saveDateCorrection(String new_val) async {
+
+    SharedPreferences  pref =await SharedPreferences.getInstance();
+
+    pref.setString("date_correction", new_val);
+
+  }
+
+  Future<void> savelang_opt(String new_val) async {
+
+    SharedPreferences  pref =await SharedPreferences.getInstance();
+
+    pref.setString("lang", new_val);
+
   }
 }
 

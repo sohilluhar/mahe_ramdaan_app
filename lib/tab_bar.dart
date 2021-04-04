@@ -8,6 +8,7 @@ import 'NewPage.dart';
 import 'Settings.dart';
 import 'Surah.dart';
 import 'add_location.dart';
+import 'allMonthTiming.dart';
 import 'components/mydrawer.dart';
 import 'constants.dart';
 import 'counterpg.dart';
@@ -27,6 +28,7 @@ const _kPages = <String, IconData>{
   'Durood': Icons.book,
   'Tasbih': Icons.add_circle_outline,
   'Surah': Icons.book,
+
 };
 
 
@@ -112,7 +114,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: _kPages.length,
       initialIndex: 0,
       child: Scaffold(
           appBar: AppBar(
@@ -136,15 +138,18 @@ class _HomePageState extends State<HomePage> {
               fit: BoxFit.cover)
       ), child: null,
     ),
+//    ListTile(
+//    title: Text('Islamic Dates'),
+//    leading: Icon(Icons.event),
+//    onTap: () =>Navigator.of(context).push(NewPage(0)),
+//    ),
     ListTile(
-    title: Text('Islamic Dates'),
-    leading: Icon(Icons.event),
-    onTap: () =>Navigator.of(context).push(NewPage(0)),
-    ),
-    ListTile(
-    title: Text('Mahe Ramadaan Timing'),
+    title: Text('Roza Timing'),
     leading: Icon(Icons.access_time),
-    onTap: () =>  Navigator.of(context).push(NewPage(1)),
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => AllMonthTiming()),
+      ),
     ),
     ListTile(
     title: Text('Settings'),
@@ -274,6 +279,7 @@ class _HomePageState extends State<HomePage> {
                   Durood(),
                   CounterPg(title:"test"),
                   Surah(),
+//                  AllMonthTiming()
                   ],
               ),
             ),

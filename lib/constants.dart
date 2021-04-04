@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 // Colors that we use in our app
 const kPrimaryColor = Color(0xFF0C9869);
@@ -8,8 +9,12 @@ const kBackgroundColor = Color(0xFFF9F8FD);
 
 const double kDefaultPadding = 20.0;
 
-var lang_opt="Hin";
-var date_correction_value=0;
+var lang_opt='';
+
+
+var date_correction_value='';
+
+
 const duroodAll =<String, String>{
   'Durood e Shafa':'اَللّٰھُمَّ صَلِّ وَ سَلِّمْ وَ بَارِکْ عَلٰی حَبِیْبِکَ شَفِیْعِ الْمُذْنِبِیْنَ وَ عَلٰٓی اٰلِہٖ وَ اَصْحَابِہٖ اَجْمَعِیْنَ',
   'Durood e Mustafa':'اَللّٰھُمَّ صَلِّ وَ سَلِّمْ وَ بَارِکْ عَلٰی حَبِیْبِکَ الْمُصْطَفٰی وَ عَلٰٓی اٰلِہٖ؁',

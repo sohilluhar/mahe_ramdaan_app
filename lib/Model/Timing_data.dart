@@ -9,14 +9,15 @@ class Timing_Data{
   String maghrib;
   String isha;
   String hizri_date;
+  String normal_date;
   var saherihr;
   var maghribhr;
   var ishahr;
 
 
   factory Timing_Data.fromJSON(Map<dynamic, dynamic> jsonData){
-    print(jsonData);
-print("inside json");
+//    print(jsonData);
+//print("inside json");
     var saheritmp=jsonData["timings"]["Imsak"].toString().replaceAll("(IST)", "");
     var saheri=DateFormat.jm().format(DateTime.parse("20210101 "+saheritmp.trim()+":00"));
 
@@ -43,6 +44,7 @@ print("inside json");
 
     var hizriDate=jsonData["date"]['hijri']['day']+' '+
         jsonData["date"]['hijri']['month']['en']+' '+jsonData["date"]['hijri']['year'];
+    var normal_date=    jsonData["date"]['readable'];
 
     var saherihr=int.parse(saheritmp.split(":")[0]);
 
@@ -50,20 +52,20 @@ print("inside json");
     var strtmp1=int.parse(  maghribtmp.split(":")[1])/60;
     var maghribhr=strtmp+strtmp1;
 
-    print(maghribhr.toString()+"is maghrib ");
+//    print(maghribhr.toString()+"is maghrib ");
 
     var strtmp2=int.parse(ishatmp.split(":")[0]);
     var strtmp3=int.parse(  ishatmp.split(":")[1])/60;
 
     var ishahr=strtmp2+strtmp3;
-    print(ishahr.toString()+"is isha ");
+//    print(ishahr.toString()+"is isha ");
 
-    print("all set");
+//    print("all set");
 
-    return Timing_Data(saheri, iftar, fajar, zohar, asr, maghrib, isha, hizriDate,saherihr,maghribhr,ishahr);
+    return Timing_Data(saheri, iftar, fajar, zohar, asr, maghrib, isha, hizriDate,normal_date,saherihr,maghribhr,ishahr);
 
   }
 
   Timing_Data(this.saheri, this.iftar, this.fajar, this.zohar, this.asr,
-      this.maghrib, this.isha, this.hizri_date,this.saherihr,this.maghribhr,this.ishahr);
+      this.maghrib, this.isha, this.hizri_date,this.normal_date,this.saherihr,this.maghribhr,this.ishahr);
 }
