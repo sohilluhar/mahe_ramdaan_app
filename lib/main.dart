@@ -34,6 +34,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Mahe Ramdaan App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
         primarySwatch: kPrimaryColor_123,

@@ -46,7 +46,7 @@ dependencies:
   shared_preferences: ^2.0.5
   firebase_core: ^1.0.2
   firebase_analytics: ^7.1.1
-
+  audioplayers: ^0.18.3
 
 
 
@@ -77,6 +77,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - lib/assets/pdf/
+    - lib/assets/images/
+    - assets/mp3/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

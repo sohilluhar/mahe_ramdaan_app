@@ -9,7 +9,7 @@
 
     <application
         android:usesCleartextTraffic="true"
-        android:label="mahe_ramdaan_app"
+        android:label="Mahe Ramadaan App"
         android:icon="@mipmap/logo">
 
        <activity

@@ -11,7 +11,7 @@ import 'add_location.dart';
 import 'allMonthTiming.dart';
 import 'components/mydrawer.dart';
 import 'constants.dart';
-import 'counterpg.dart';
+import 'counters.dart';
 import 'durood.dart';
 import 'getGeoLocation.dart';
 import 'home.dart';
@@ -208,8 +208,8 @@ class _HomePageState extends State<HomePage> {
     title: Text('Special Thanks'),
     leading: Icon(Icons.people),
     onTap: () =>{
-    Navigator.push(context,
-    MaterialPageRoute(builder: (context) => GetLocation()),)
+//    Navigator.push(context,
+//    MaterialPageRoute(builder: (context) => GetLocation()),)
     },
     ),
 
@@ -259,9 +259,19 @@ class _HomePageState extends State<HomePage> {
 
     Divider(),
     ListTile(
-    title: Text('Privacy Policy & Terms of Usage'),
+    title: Text('Privacy Policy'),
 //                leading: Icon(Icons.settings),
-    onTap: () async =>{},
+    onTap: () async =>{
+
+      await launch('https://mahe-ramadaan-card.flycricket.io/privacy.html')
+    },
+    ), ListTile(
+    title: Text('Terms & Conditions'),
+//                leading: Icon(Icons.settings),
+    onTap: () async =>{
+
+      await launch('https://mahe-ramadaan-card.flycricket.io/terms.html')
+    },
     ),
 
     ],
@@ -277,7 +287,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Home(),
                   Durood(),
-                  CounterPg(title:"test"),
+                  Tasbeeh(),
                   Surah(),
 //                  AllMonthTiming()
                   ],
