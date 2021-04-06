@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:mahe_ramdaan_app/constants.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 
@@ -26,6 +29,11 @@ class _Settings extends State<Settings> {
             _buildLangOption(),
             Divider(),
             _buildDateCorrectionOption(),
+            Divider(),
+            MaterialButton(onPressed: (){
+              deleteOldData();
+            },
+                child:Text("Update Location"))
 
 
           ],
@@ -34,6 +42,16 @@ class _Settings extends State<Settings> {
       );
   }
 
+  Future<void> deleteOldData() async {
+    final Directory directory = await getApplicationDocumentsDirectory();
+
+    DateTime now = DateTime. now();
+    var month=now.month.toString();
+    if(File('${directory.path}/'+month+'-timing.json').existsSync()){
+      print("deleteing old data");
+      File('${directory.path}/'+month+'-timing.json').deleteSync();
+    }
+  }
   // Select style enum from dropdown menu:
   Widget _buildLangOption() {
     final dropdown = DropdownButton<String>(
@@ -124,6 +142,15 @@ class _Settings extends State<Settings> {
     SharedPreferences  pref =await SharedPreferences.getInstance();
 
     pref.setString("date_correction", new_val);
+    final Directory directory = await getApplicationDocumentsDirectory();
+
+    DateTime now = DateTime. now();
+    var month=now.month.toString();
+
+    if(File('${directory.path}/'+month+'-timing.json').existsSync()){
+      print("deleteing old data");
+      File('${directory.path}/'+month+'-timing.json').deleteSync();
+    }
 
   }
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "146863116045",
+    "project_id": "maheramadaanapp",
+    "storage_bucket": "maheramadaanapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146863116045:android:b08e79e9bf935080ec2a44",
+        "android_client_info": {
+          "package_name": "app.ramdaan.mahe_ramdaan_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146863116045-b9b1007hg7aaojjus5fcotds7ick09d5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq9l9MY2ArSvUIRYWpTR26SxTyR977pok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146863116045-b9b1007hg7aaojjus5fcotds7ick09d5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

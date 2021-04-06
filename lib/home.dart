@@ -41,10 +41,10 @@ class _HomeState extends State<Home> {
   }
 
 
-//  @override
-//  void didUpdateWidget(Home oldWidget) {
-//    timing_data=makeGetRequest();
-//  }
+  @override
+  void didUpdateWidget(Home oldWidget) {
+    timing_data=makeGetRequest();
+  }
 //
 //  @override
 //  void setState(VoidCallback fn) {

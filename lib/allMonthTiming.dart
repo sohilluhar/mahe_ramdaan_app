@@ -10,6 +10,7 @@ import 'package:mahe_ramdaan_app/constants.dart';
 import 'All_Doorud.dart';
 import 'All_Dua_Guj.dart';
 import 'All_Dua_Hin.dart';
+import 'Model/Timing_data_Month.dart';
 import 'Special_dua_Gujarati.dart';
 import 'Special_dua_Hindi.dart';
 import 'api_response.dart';
@@ -32,10 +33,15 @@ class _AllMonthTiming extends State<AllMonthTiming> {
   DateTime now = DateTime. now();
 
 
-  Future<Timing_Data> timing_data;
+  Future<Timing_Data_Month> timing_data;
 
 
-  var list=[1,2,3,4,5,6,7,8,10,11,12,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+  List< dynamic> allmnthno=[
+    0,1,2,3,4,5,6,7,8,9,10,
+    11,12,13,14,15,16,17,18,19,20,
+    21,22,23,24,25,26,27,28,29,30
+  ];
+
   @override
   void initState() {
     // TODO: implement initState
@@ -58,7 +64,7 @@ class _AllMonthTiming extends State<AllMonthTiming> {
 
             child:
 
-            FutureBuilder<Timing_Data>(
+            FutureBuilder<Timing_Data_Month>(
               future:timing_data,
               builder:(context,snapshot){
                 if(snapshot.hasData){
@@ -71,17 +77,9 @@ class _AllMonthTiming extends State<AllMonthTiming> {
                       SizedBox(height: 16),
 
 
-                for(var value in list)
-                      CardUI(title: snapshot.data.normal_date, content: "Saheri: " +
-                          snapshot.data.saheri + "\n" + "Iftar: " + snapshot.data.iftar),
-
-
-
-
-
-
-
-
+                for(var i in allmnthno)
+                      CardUI(title: snapshot.data.normal_date[i], content: "Saheri: " +
+                          snapshot.data.saheri[i] + "\n" + "Iftar: " + snapshot.data.iftar[i]),
 
 
                     ],
