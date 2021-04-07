@@ -8,7 +8,10 @@ const kTextColor = Color(0xFF3C4046);
 const kBackgroundColor = Color(0xFFF9F8FD);
 
 const double kDefaultPadding = 20.0;
-var aboutus='Mahe Ramadaan is an islamic app available in Gujarati & Hindi . App includes amazing and useful features listed below. It is design on privacy first principle, we do no any personal data, we use your location to get local namaz timing';
+var aboutus='Mahe Ramadaan is an islamic app available in Gujarati & Hindi .'
+    ' App includes amazing and useful features listed below. '
+    'It is design on privacy first principle, we do no any personal data, '
+    'we use your location to get local namaz timing';
 var lang_opt='';
 var share_msg_to_user=''
     'Salam, Download this amazing and useful app for mahe ramadaan. Mahe Ramadaan Card has collections of dua,durood,mahe ramdaan special dua,quraan sharif ,audio of surah and many more... '
@@ -102,7 +105,7 @@ const mahe_ramadaan_special_dua=
   
 ● Ae Allah hame kamil iman naseeb farma aur puri hidayat ataa farma
 
-● Ae Allah hame pure ramadaan neamate ,anvaa va barkat se malamal farma
+● Ae Allah hame pure ramadaan neamate ,anvaar va barkat se malamal farma
 
 ● Ae Allah ham par apni rehmat najil farma,karam ki barish farma aur rizke halat ataa farma
 
@@ -120,7 +123,7 @@ const mahe_ramadaan_special_dua=
 
 ● Ae Allah hamare sgeerah aur kabeerah gunaaho ko maaf farma
 
-● Ae Allah humko dajjal ke fitne, shaitan aur nafs ke shar se mafuj rakh
+● Ae Allah humko dajjal ke fitne, shaitan aur nafs ke shar se mahfuj rakh
 
 ● Ae Allah aurton ko parde ki poori poori pabandi karne ki toufik ataa farma
 
@@ -128,7 +131,7 @@ const mahe_ramadaan_special_dua=
 
 ● Ae Allah hame taqwa aur paherejgari ataa farma
 
-● Ae Allah hame huzur e aqdas ﷺ ke pyare tarike par kaym rakh
+● Ae Allah hame huzur e aqdas ﷺ ke pyare tarike par kayam rakh
 
 ● Ae Allah hame huzur e aqram ﷺ ki sunnat par chalne ki toufik ataa farma
 
@@ -136,7 +139,7 @@ const mahe_ramadaan_special_dua=
 
 ● Ae Allah hame kayamat kee din huzur ﷺ ki shifaat naseeb farma
 
-● Ae Allah tu apni mohabbat aur hamare aqa ﷺ mohabbat hamre dilo mein dalde
+● Ae Allah tu apni mohabbat aur hamare aqa ﷺ mohabbat hamare dilo mein dalde
 
 ● Ae Allah hame maut ki sakhti aur kabr ke ajaab se bachaa
 
@@ -223,7 +226,7 @@ const mahe_ramadaan_special_dua_guj=<String,String>{'રમઝાન દુઆ �
   
 ● એ અલ્લાહ હમે કામિલ ઇમાન નસીબ ફર્મા ઓર પુરી હિદાયત આતા ફર્મા
 
-● એ અલ્લાહ હમે પુરે રામદાન નેમાતે, અનવાર વ બરકત સે માલમાલ ફર્મા 
+● એ અલ્લાહ હમે પુરે રમદાન નેઅમતે, અનવાર વ બરકત સે માલામાલ ફર્મા 
 
 ● એ અલ્લાહ હમ પર અપની રેહમત નાજિલ ફર્મા, કરમ કી બારીશ ફર્મા ઓર રિઝકે હલાત આતા ફર્મા
 

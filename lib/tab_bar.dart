@@ -1,5 +1,6 @@
 import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:mahe_ramdaan_app/Aboutus.dart';
 import 'package:mahe_ramdaan_app/Pdf_view.dart';
 import 'package:mahe_ramdaan_app/test_guj.dart';
 import 'package:share/share.dart';
@@ -25,9 +26,9 @@ import 'package:path_provider/path_provider.dart';
 
 const _kPages = <String, IconData>{
   'Home': Icons.home,
-  'Durood': Icons.book,
+  'Surah': Icons.audiotrack,
   'Tasbih': Icons.add_circle_outline,
-  'Surah': Icons.book,
+  'Durood': Icons.book,
 
 };
 
@@ -216,7 +217,13 @@ class _HomePageState extends State<HomePage> {
     ListTile(
     title: Text('About Us'),
     leading: Icon(Icons.info_outline),
-    onTap: () async =>{},
+    onTap: ()  =>{
+    Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => AboutUs()),
+    ).then((value) => setState(() {})),
+
+    },
     ),ListTile(
     title: Text('Contact Us'),
     leading: Icon(Icons.mail),
@@ -291,9 +298,9 @@ class _HomePageState extends State<HomePage> {
               child: TabBarView(
                 children: [
                   Home(),
-                  Durood(),
-                  Tasbeeh(),
                   Surah(),
+                  Tasbeeh(),
+                  Durood(),
 //                  AllMonthTiming()
                   ],
               ),
