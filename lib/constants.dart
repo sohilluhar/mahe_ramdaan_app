@@ -8,11 +8,12 @@ const kTextColor = Color(0xFF3C4046);
 const kBackgroundColor = Color(0xFFF9F8FD);
 
 const double kDefaultPadding = 20.0;
-
+var aboutus='Mahe Ramadaan is an islamic app available in Gujarati & Hindi . App includes amazing and useful features listed below. It is design on privacy first principle, we do no any personal data, we use your location to get local namaz timing';
 var lang_opt='';
-var share_msg_to_user='Check out our amazing app on playstore http://play.google.com/store/apps/details?id=app.ramdaan.mahe_ramdaan_app    '
-    'Follow us on Instagram:'
-    'https://instagram.com/mahe_ramadaan_app';
+var share_msg_to_user=''
+    'Salam, Download this amazing and useful app for mahe ramadaan. Mahe Ramadaan Card has collections of dua,durood,mahe ramdaan special dua,quraan sharif ,audio of surah and many more... '
+    'Download now from  playstore http://play.google.com/store/apps/details?id=app.ramdaan.mahe_ramdaan_app    '
+    'Follow Mahe Ramadaan Card on Instagram for more updates https://instagram.com/mahe_ramadaan_app';
 
 
 var date_correction_value='';
@@ -84,9 +85,9 @@ const dua_small_guj=<String,List>{
 અલ્લાહુમ્મા અજીરના મિન્નાર,
 યા મુજીરુ યા મુજીરુ યા મુજીરુ."""
   ],
-  'Rehamat Ashra': ['રેહમત કા અશરાહ', 'રેહમત કા અશરાહ'],
-  'Maghfirat Ashra': ['મગફિરત કા અશરાહ', 'મગફિરત કા અશરાહ'],
-  'Jahannam Najaat': ['જહન્નમ સે નજાત કા અશરાહ', 'જહન્નમ સે નજાત કા અશરાહ'],
+  'Rehamat Ashra': ['રેહમત કા અશરાહ', ' '],
+  'Maghfirat Ashra': ['મગફિરત કા અશરાહ', ' '],
+  'Jahannam Najaat': ['જહન્નમ સે નજાત કા અશરાહ', ' '],
   'Sab E Qadr': [
     'શબેકદ્ર ',
     'અલ્લાહુમ્મા ઇન્ન-ક અફૂવવુન તુહિબ્બુલ અફવ ફઅ-ફૂ અન્ની'

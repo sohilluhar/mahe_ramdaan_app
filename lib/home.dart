@@ -185,6 +185,8 @@ FutureBuilder<Timing_Data>(
                   ))
           ),
           SizedBox(height:24),
+
+
           TitleWithMoreBtn(title: "Ashrah dua", press: () {
             if(lang_opt!='Guj')
               Navigator.of(context).push(All_Dua_Hin());
@@ -281,8 +283,19 @@ FutureBuilder<Timing_Data>(
   retun_ashrahdua(Timing_Data data) {
 
 
-    var key="Rehamat Ashra";
 
+    var key="Rehamat Ashra";
+    var pos;
+    var hizri_day=int.parse( data.hizri_date.split(" ")[0]);
+    if(hizri_day<=10){
+      pos=0;
+    }else if(hizri_day<=20){
+      pos=1;
+    }else{
+
+      pos=2;
+    }
+   key=ashra_key[pos];
 
     if(lang_opt=="Guj"){
 

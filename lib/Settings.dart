@@ -126,6 +126,7 @@ class _Settings extends State<Settings> {
               style: TextStyle(fontSize: 18,color: Colors.black,)),
         ),
 
+
       ],
     );
 

@@ -129,12 +129,12 @@ class _HomePageState extends State<HomePage> {
 
           DrawerHeader(
           decoration: BoxDecoration(
-          color: Colors.blue,
+          color: kPrimaryColor,
           image: DecorationImage(
-              image:NetworkImage(
-                  'https://videohive.img.customer.envatousercontent.com/files/193116419/Ramadan-Mubarak-Greetings-and-Wishes-Video-Template-Download.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ee316413b101b7407f3b581b50d88f35'),
+              image:
+//              NetworkImage(                  'https://videohive.img.customer.envatousercontent.com/files/193116419/Ramadan-Mubarak-Greetings-and-Wishes-Video-Template-Download.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=ee316413b101b7407f3b581b50d88f35'),
 
-//                        AssetImage("assets/gold.jpg"),
+                        AssetImage("lib/assets/images/banner.png"),
               fit: BoxFit.cover)
       ), child: null,
     ),
