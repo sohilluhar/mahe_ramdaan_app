@@ -143,14 +143,14 @@ class _HomePageState extends State<HomePage> {
 //    leading: Icon(Icons.event),
 //    onTap: () =>Navigator.of(context).push(NewPage(0)),
 //    ),
-    ListTile(
-    title: Text('Roza Timing'),
-    leading: Icon(Icons.access_time),
-      onTap: () => Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => AllMonthTiming()),
-      ),
-    ),
+//    ListTile(
+//    title: Text('Roza Timing'),
+//    leading: Icon(Icons.access_time),
+//      onTap: () => Navigator.push(
+//        context,
+//        MaterialPageRoute(builder: (context) => AllMonthTiming()),
+//      ),
+//    ),
     ListTile(
     title: Text('Settings'),
     leading: Icon(Icons.settings),
@@ -204,14 +204,14 @@ class _HomePageState extends State<HomePage> {
 
           }),
     Divider(),
-    ListTile(
-    title: Text('Special Thanks'),
-    leading: Icon(Icons.people),
-    onTap: () =>{
-//    Navigator.push(context,
-//    MaterialPageRoute(builder: (context) => GetLocation()),)
-    },
-    ),
+//    ListTile(
+//    title: Text('Special Thanks'),
+//    leading: Icon(Icons.people),
+//    onTap: () =>{
+////    Navigator.push(context,
+////    MaterialPageRoute(builder: (context) => GetLocation()),)
+//    },
+//    ),
 
     ListTile(
     title: Text('About Us'),
@@ -237,14 +237,19 @@ class _HomePageState extends State<HomePage> {
     ListTile(
     title: Text('Rate'),
     leading: Icon(Icons.star),
-    onTap: () async =>{},
+    onTap: () async =>{
+
+      await launch('http://play.google.com/store/apps/details?id=app.ramdaan.mahe_ramdaan_app')
+
+//      http://play.google.com/store/apps/details?id=app.ramdaan.mahe_ramdaan_app
+    },
     ),
 
     ListTile(
     title: Text('Share App'),
     leading: Icon(Icons.share),
     onTap: ()  =>{
-    Share.share("Hey checkout my new app https://instagram.com/mahe_ramadaan_app ")
+    Share.share(share_msg_to_user)
     },
     ),
     ListTile(

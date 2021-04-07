@@ -10,6 +10,9 @@ const kBackgroundColor = Color(0xFFF9F8FD);
 const double kDefaultPadding = 20.0;
 
 var lang_opt='';
+var share_msg_to_user='Check out our amazing app on playstore http://play.google.com/store/apps/details?id=app.ramdaan.mahe_ramdaan_app    '
+    'Follow us on Instagram:'
+    'https://instagram.com/mahe_ramadaan_app';
 
 
 var date_correction_value='';

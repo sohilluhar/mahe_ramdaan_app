@@ -102,37 +102,6 @@ class Surah extends StatelessWidget {
 
                   ))
           ),
-          SizedBox(height: 16),
-          Card(
-              color: kPrimaryColor,
-              margin: EdgeInsets.only(left: sizeWi * 0.05, right: sizeWi * 0.05),
-              child: InkWell(
-                  splashColor: kPrimaryColor.withOpacity(0.1),
-                  onTap: () {
-
-                    Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => PDFScreen(path: "lib/assets/pdf/Surah-Yaseen-in-Arabic.pdf",title: "Surah Yaseen")),);
-
-
-                  },
-                  child:
-                  ListTile(
-                    title: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-
-                        Text(
-                          "Surah Yaseen",
-                          style: TextStyle(fontSize: 18,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.white),
-                        ),
-                      ],
-                    ),
-
-
-                  ))
-          ),
 
           SizedBox(height: 16),
           Card(
@@ -166,6 +135,7 @@ class Surah extends StatelessWidget {
                   ))
           ),
 
+
           SizedBox(height: 16),
           Card(
               color: kPrimaryColor,
@@ -197,6 +167,40 @@ class Surah extends StatelessWidget {
 
                   ))
           ),
+
+
+          SizedBox(height: 16),
+          Card(
+              color: kPrimaryColor,
+              margin: EdgeInsets.only(left: sizeWi * 0.05, right: sizeWi * 0.05),
+              child: InkWell(
+                  splashColor: kPrimaryColor.withOpacity(0.1),
+                  onTap: () {
+
+                    Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => PDFScreen(path: "lib/assets/pdf/Surah-Yaseen-in-Arabic.pdf",title: "Surah Yaseen")),);
+
+
+                  },
+                  child:
+                  ListTile(
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+
+                        Text(
+                          "Surah Yaseen",
+                          style: TextStyle(fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ],
+                    ),
+
+
+                  ))
+          ),
+
 
           SizedBox(height: 16),
           Card(

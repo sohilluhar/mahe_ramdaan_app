@@ -88,10 +88,18 @@ class _MusicAppState extends State<MusicApp> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
 
+
+    return Scaffold(
       appBar: AppBar(
         title: Text("Quran Audio"),
+
+        leading: new IconButton(    icon: new Icon(Icons.arrow_back),onPressed: (){
+          _player.stop();
+          Navigator.pop(context);
+    },),
+
+
       ),
       body: Container(
         width: double.infinity,

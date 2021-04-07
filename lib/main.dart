@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: kPrimaryColor_123,
       ),
-      home: HomePage(title:"Home"),
+      home: HomePage(title:"Mahe Ramadaan Card"),
 
     );
   }
