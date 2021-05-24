@@ -1,4 +1,4 @@
-# mahe_ramdaan_app
+# Mahe Ramdaan App
 
 A new Mahe Ramdaan App
 
