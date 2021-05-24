@@ -13,3 +13,5 @@ It provides the following features :
 - Available in Gujarati also
 - Naat Lyrics,Naat MP3,Bayan and many more
 
+# App Link 
+https://play.google.com/store/apps/details?id=com.digiliyo.mahe_ramadaan_app
